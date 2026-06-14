@@ -345,45 +345,6 @@ h1 {
 }
 
 /* ========================= */
-/* 小区分 */
-/* ========================= */
-
-.section {
-
-  margin-bottom: 15px;
-
-  background-color: white;
-
-  border-radius: 12px;
-
-  overflow: hidden;
-}
-
-/* ヘッダー */
-.section-header {
-
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-
-  padding: 15px 20px;
-
-  cursor: pointer;
-
-  font-size: 18px;
-
-  font-weight: bold;
-}
-
-/* アイコン */
-.toggle-icon {
-
-  font-size: 15px;
-}
-
-/* ========================= */
 /* 一覧 */
 /* ========================= */
 
@@ -402,7 +363,112 @@ h1 {
 
   display: block;
 }
+.product-container {
 
+  display: flex;
+
+  gap: 20px;
+
+  align-items: center;
+
+}
+
+.product-image img {
+
+  width: 180px;
+
+  height: 180px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+
+}
+
+.product-info {
+
+  flex: 1;
+
+}
+
+.product-name,
+.product-price {
+
+  background: #d8e3ef;
+
+  padding: 15px;
+
+  margin-bottom: 15px;
+
+  text-align: center;
+
+  border: 1px solid #666;
+
+}
+
+.quantity-box {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 30px;
+
+}
+
+.quantity-box button {
+
+  border: none;
+
+  background: none;
+
+  font-size: 30px;
+
+  cursor: pointer;
+
+}
+
+.count {
+
+  width: 80px;
+
+  height: 80px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background: #d8e3ef;
+
+  border: 1px solid #666;
+
+  font-size: 24px;
+
+}
+
+#total-price {
+
+  position: sticky;
+
+  bottom: 0;
+
+  background: white;
+
+  padding: 20px;
+
+  font-size: 24px;
+
+  font-weight: bold;
+
+  text-align: center;
+
+  box-shadow: 0 -3px 10px rgba(0,0,0,.15);
+
+}
 /* ========================= */
 /* カード */
 /* ========================= */
