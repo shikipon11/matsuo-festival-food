@@ -22,7 +22,7 @@ const products = [
   section: "模擬店",
   price: "300",
   quantity: 0,
-  image: [""]
+  image: ["images/3807A46D-9843-4BFF-93C8-16383E6A4D41.jpeg"]
 },
     {
   name: "ポップコーン",
