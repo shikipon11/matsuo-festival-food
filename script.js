@@ -537,9 +537,29 @@ function renderPlaceView() {
 //仮
 function createProjectList(data) {
 
+  contentArea.innerHTML = "";
+
   data.forEach(project => {
 
-    console.log(project.title);
+    const card = document.createElement("div");
+
+    card.className = "project-card";
+
+    card.innerHTML = `
+      <div class="project-top">
+
+        <div class="project-circle">
+          ${project.number}
+        </div>
+
+        <div class="project-title">
+          ${project.title}
+        </div>
+
+      </div>
+    `;
+
+    contentArea.appendChild(card);
 
   });
 
