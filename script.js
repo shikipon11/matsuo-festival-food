@@ -6,67 +6,67 @@ const products = [
   {
   name: "ワッフル",
   section: "模擬店",
-  price: "300円",
+  price: "300",
   image: [""]
 },
   {
   name: "チョコバナナ",
   section: "模擬店",
-  price: "300円",
+  price: "300",
   image: [""]
 },
     {
   name: "タピオカ",
   section: "模擬店",
-  price: "300円",
+  price: "300",
   image: [""]
 },
     {
   name: "ポップコーン",
   section: "模擬店",
-  price: "300円",
+  price: "300",
   image: [""]
 },
     {
   name: "フランクフルト",
   section: "模擬店",
-  price: "300円",
+  price: "300",
   image: [""]
 },
     {
   name: "焼き鳥",
   section: "模擬店",
-  price: "300円",
+  price: "300",
   image: [""]
 },
     {
   name: "レモネード",
   section: "模擬店",
-  price: "300円",
+  price: "300",
   image: [""]
 },
     {
   name: "クレープ",
   section: "模擬店",
-  price: "300円",
+  price: "300",
   image: [""]
 },
     {
   name: "たこ焼き",
   section: "模擬店",
-  price: "300円",
+  price: "300",
   image: [""]
 },
       {
   name: "あれこれ",
   section: "飲食",
-  price: "300円",
+  price: "300",
   image: [""]
 },
       {
   name: "いろいろ",
   section: "地域応援",
-  price: "300円",
+  price: "300",
   image: [""]
 }
 ];
