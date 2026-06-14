@@ -394,15 +394,31 @@ h1 {
 .product-name,
 .product-price {
 
-  background: #d8e3ef;
+  background: none;
 
-  padding: 15px;
+  border: none;
+
+  padding: 0;
 
   margin-bottom: 15px;
 
-  text-align: center;
+  text-align: left;
 
-  border: 1px solid #666;
+}
+
+.product-name {
+
+  font-size: 32px;
+
+  font-weight: bold;
+
+}
+
+.product-price {
+
+  font-size: 28px;
+
+  font-weight: bold;
 
 }
 
