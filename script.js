@@ -68,7 +68,7 @@ const products = [
 },
     {
   name: "あれこれ",
-  section: "飲食",
+  section: "飲食係",
   price: "300",
   quantity: 0,
   image: [""]
