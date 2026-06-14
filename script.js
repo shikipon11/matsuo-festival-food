@@ -8,14 +8,14 @@ const products = [
   section: "模擬店",
   price: "300",
   quantity: 0,
-  image: ["B8B6702C-AEC4-4301-822E-DB9095A9BEDF.jpeg"]
+  image: ["images/B8B6702C-AEC4-4301-822E-DB9095A9BEDF.jpeg"]
 },
   {
   name: "チョコバナナ",
   section: "模擬店",
   price: "300",
   quantity: 0,
-  image: ["5E6C9A38-FC99-4B18-9C24-A5066DFCC89F.jpeg"]
+  image: ["images/5E6C9A38-FC99-4B18-9C24-A5066DFCC89F.jpeg"]
 },
     {
   name: "タピオカ",
@@ -29,28 +29,28 @@ const products = [
   section: "模擬店",
   price: "200",
   quantity: 0,
-  image: ["C2CF8B4C-00ED-4072-8A7E-60A8271EE4ED.jpeg"]
+  image: ["images/C2CF8B4C-00ED-4072-8A7E-60A8271EE4ED.jpeg"]
 },
     {
   name: "フランクフルト",
   section: "模擬店",
   price: "300",
   quantity: 0,
-  image: ["4A964AA1-8E3E-4C3F-8489-0C16903063B9.jpeg"]
+  image: ["images/4A964AA1-8E3E-4C3F-8489-0C16903063B9.jpeg"]
 },
     {
   name: "焼き鳥",
   section: "模擬店",
   price: "300",
   quantity: 0,
-  image: ["ED01DA8A-0670-4E2C-A34A-CAD3635ED83E.jpeg"]
+  image: ["images/ED01DA8A-0670-4E2C-A34A-CAD3635ED83E.jpeg"]
 },
     {
   name: "レモネード",
   section: "模擬店",
   price: "300",
   quantity: 0,
-  image: ["A46B3191-6339-4825-AD63-B47F99E35908.jpeg"]
+  image: ["images/A46B3191-6339-4825-AD63-B47F99E35908.jpeg"]
 },
     {
   name: "クレープ",
