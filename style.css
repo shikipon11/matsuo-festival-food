@@ -367,7 +367,22 @@ h1 {
 
   display: flex;
 
-  gap: 20px;
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 40px;
+
+  max-width: 800px;
+
+  margin: 0 auto;
+
+}
+.product-info {
+
+  display: flex;
+
+  flex-direction: column;
 
   align-items: center;
 
@@ -448,19 +463,15 @@ h1 {
 
 .count {
 
-  width: 80px;
+  width: 50px;
 
-  height: 80px;
+  height: 50px;
 
   display: flex;
 
   justify-content: center;
 
   align-items: center;
-
-  background: #d8e3ef;
-
-  border: 1px solid #666;
 
   font-size: 24px;
 
