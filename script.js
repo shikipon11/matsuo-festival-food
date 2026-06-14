@@ -534,6 +534,16 @@ function renderPlaceView() {
   createProjectList(projects);
 
 }
+//仮
+function createProjectList(data) {
+
+  data.forEach(project => {
+
+    console.log(project.title);
+
+  });
+
+}
 
 // =========================
 // モーダルを閉じる
