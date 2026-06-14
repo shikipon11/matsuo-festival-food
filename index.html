@@ -1,6 +1,5 @@
 <!-- ========================= -->
-<!-- template.html            -->
-<!-- 別ページ用テンプレート     -->
+<!-- index.html -->
 <!-- ========================= -->
 
 <!DOCTYPE html>
@@ -21,37 +20,41 @@
     rel="preconnect"
     href="https://fonts.googleapis.com"
   >
+
   <link
     rel="preconnect"
     href="https://fonts.gstatic.com"
     crossorigin
   >
+
   <link
     href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
     rel="stylesheet"
   >
   <link
-    href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&display=swap"
+  href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&display=swap"
+  rel="stylesheet"
+>
+
+  <!-- CSS -->
+  <link
     rel="stylesheet"
+    href="style.css"
   >
-
-  <!-- 共通CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- ページ固有CSS（必要なら） -->
-  <!-- <link rel="stylesheet" href="page.css"> -->
-
-  <link rel="icon" href="images/IMG_0439.JPG">
-
-  <!-- ↓ページに合わせて変更 -->
-  <title>第69回松尾祭 - ページ名</title>
+  <link
+  rel="icon"
+  href="images/IMG_0439.JPG"
+  >
+  <title>
+    第69回松尾祭-飲食メニュー
+  </title>
 
 </head>
 
 <body>
-
+  
   <!-- ========================= -->
-  <!-- ヘッダー（共通）          -->
+  <!-- ヘッダー -->
   <!-- ========================= -->
 
   <header class="site-header">
@@ -60,7 +63,11 @@
     <div class="header-left">
 
       <!-- ハンバーガー -->
-      <button id="menu-button">☰</button>
+      <button id="menu-button">
+
+        ☰
+
+      </button>
 
       <!-- ロゴ -->
       <img
@@ -70,27 +77,92 @@
       >
 
       <!-- タイトル -->
-      <div class="header-title">第69回松尾祭</div>
+      <div class="header-title">
+
+        第69回松尾祭
+
+      </div>
 
     </div>
 
     <!-- メニュー -->
-    <nav class="header-nav" id="header-nav">
+    <nav
+      class="header-nav"
+      id="header-nav"
+    >
 
-      <a href="https://sites.google.com/view/matsuofes69/%E3%83%9B%E3%83%BC%E3%83%A0?authuser=2">ホーム</a>
-      <a href="https://sites.google.com/view/matsuofes69/map?authuser=2">MAP</a>
-      <a href="index.html">企画一覧</a>
-      <a href="https://sites.google.com/view/matsuofes69/%E3%82%B0%E3%83%83%E3%82%BA?authuser=2">グッズ</a>
-      <a href="https://sites.google.com/view/matsuofes69/%E9%A3%B2%E9%A3%9F%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC?authuser=0">飲食メニュー</a>
-      <a href="https://sites.google.com/view/matsuofes69/%E3%81%8A%E5%95%8F%E5%90%88%E3%81%9B?authuser=2">お問合せ</a>
+      <!-- ホーム -->
+      <a href="https://sites.google.com/view/matsuofes69/%E3%83%9B%E3%83%BC%E3%83%A0?authuser=2">
 
-      <!-- スケジュール ドロップダウン -->
+        ホーム
+
+      </a>
+      
+      <!-- MAP -->
+      <a href="https://sites.google.com/view/matsuofes69/map?authuser=2">
+
+        MAP
+
+      </a>
+
+      <!-- 企画一覧 -->
+      <a href="https://shikipon11.github.io/matuo-festival-project/">
+
+        企画一覧
+
+      </a>
+     
+      <!-- グッズ -->
+      <a href="https://sites.google.com/view/matsuofes69/%E3%82%B0%E3%83%83%E3%82%BA?authuser=2">
+
+        グッズ
+
+      </a>
+
+       <!-- 飲食メニュー -->
+      <a href="index.html">
+
+        飲食メニュー
+
+      </a>
+
+      <!-- お問合せ -->
+      <a href="https://sites.google.com/view/matsuofes69/%E3%81%8A%E5%95%8F%E5%90%88%E3%81%9B?authuser=2">
+
+        お問合せ
+
+      </a>
+
+      <!-- スケジュール -->
       <div class="dropdown">
-        <button id="schedule-toggle" class="dropdown-button">スケジュール ▼</button>
+
+        <!-- ボタン -->
+        <button
+          id="schedule-toggle"
+          class="dropdown-button"
+        >
+
+          スケジュール ▼
+
+        </button>
+
+        <!-- 開閉メニュー -->
         <div id="schedule-dropdown">
-          <a href="https://sites.google.com/view/matsuofes69/%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB/%E7%94%9F%E5%BE%92%E3%81%AE%E6%96%B9%E3%81%AF%E3%81%93%E3%81%A1%E3%82%89?authuser=2">生徒の方はこちら</a>
-          <a href="https://sites.google.com/view/matsuofes69/%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB/%E4%B8%80%E8%88%AC%E3%81%AE%E6%96%B9%E3%81%AF%E3%81%93%E3%81%A1%E3%82%89?authuser=2">一般の方はこちら</a>
+
+          <a href="https://sites.google.com/view/matsuofes69/%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB/%E7%94%9F%E5%BE%92%E3%81%AE%E6%96%B9%E3%81%AF%E3%81%93%E3%81%A1%E3%82%89?authuser=2">
+
+            生徒の方はこちら
+
+          </a>
+
+          <a href="https://sites.google.com/view/matsuofes69/%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB/%E4%B8%80%E8%88%AC%E3%81%AE%E6%96%B9%E3%81%AF%E3%81%93%E3%81%A1%E3%82%89?authuser=2">
+
+            一般の方はこちら
+
+          </a>
+
         </div>
+
       </div>
 
     </nav>
@@ -98,47 +170,73 @@
   </header>
 
   <!-- ========================= -->
-  <!-- ヒーロー（共通）          -->
-  <!-- ページタイトルだけ変更    -->
+  <!-- ヒーロー -->
   <!-- ========================= -->
 
   <section class="hero">
+
+    <!-- オーバーレイ -->
     <div class="hero-overlay">
-      <!-- ↓ページに合わせて変更 -->
-      <h1 class="hero-title" id="hero-title">ページ名</h1>
+
+      <!-- タイトル -->
+      <h1 class="hero-title" id="hero-title">
+
+        飲食メニュー
+
+      </h1>
+
     </div>
+
   </section>
 
   <!-- ========================= -->
-  <!-- メインコンテンツ          -->
-  <!-- ここにページ固有の内容を書く -->
+  <!-- ページ全体 -->
   <!-- ========================= -->
 
-  <div class="container">
 
-    <!-- ↓ここにページ固有のHTMLを追加 -->
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 
-  </div>
+<!-- ========================= -->
+<!-- フッター -->
+<!-- ========================= -->
 
-  <!-- ========================= -->
-  <!-- フッター（共通）          -->
-  <!-- ========================= -->
+<footer class="site-footer">
 
-  <footer class="site-footer">
-    <h2 class="footer-title">第69回松尾祭</h2>
-    <p class="footer-text">松尾祭実行委員会</p>
-    <p class="footer-text">松尾祭係会</p>
-    <p class="footer-note">サイトの内容は予告なく変更することがあります。</p>
-    <p class="footer-note">また、本サイトは手動更新ですので最新状況は現地でお確かめください。</p>
-  </footer>
+  <!-- タイトル -->
+  <h2 class="footer-title">
 
-  <!-- ========================= -->
-  <!-- 共通JS                    -->
-  <!-- ========================= -->
-  <script src="common.js"></script>
+    第69回松尾祭
 
-  <!-- ページ固有JS（必要なら） -->
-  <!-- <script src="page.js"></script> -->
+  </h2>
+
+  <p class="footer-text">
+
+    松尾祭実行委員会
+
+  </p>
+
+
+  <p class="footer-text">
+
+    松尾祭係会
+
+  </p>
+
+  <!-- 注意 -->
+  <p class="footer-note">
+
+    サイトの内容は予告なく変更することがあります。
+
+  </p>
+
+  <p class="footer-note">
+
+    また、本サイトは手動更新ですので最新状況は現地でお確かめください。
+
+  </p>
+
+</footer>
 
 </body>
 
