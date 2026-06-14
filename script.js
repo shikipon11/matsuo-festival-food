@@ -2,7 +2,7 @@
 // script.js
 // =========================
 
-const projects = [
+const products = [
   {
   name: "ワッフル",
   section: "模擬店",
