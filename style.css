@@ -44,6 +44,7 @@ body {
   box-shadow:
     0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 /* 左側 */
 .header-left {
 
@@ -258,6 +259,564 @@ body {
     "Zen Old Mincho",
     serif;
 }
+
+/* ========================= */
+/* コンテナ */
+/* ========================= */
+.container {
+
+  max-width: 900px;
+
+  margin: auto;
+
+  padding: 20px;
+
+  padding-bottom: 80px;
+
+  color: #134f5c;
+
+}
+
+/* タイトル */
+h1 {
+
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+/* ========================= */
+/* 上部ボタン */
+/* ========================= */
+
+.top-buttons {
+
+  display: flex;
+
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+/* ボタン */
+.tab-button {
+
+  flex: 1;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background-color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+  color: #333333;
+
+  font-weight: bold;
+
+  font-family:
+    "Zen Kaku Gothic New",
+    sans-serif;
+
+  appearance: none;
+
+  -webkit-appearance: none;
+}
+
+/* ホバー */
+.tab-button:hover {
+
+  background-color: #f0d2c8;
+}
+
+/* 選択中 */
+.tab-button.active {
+
+  background-color: #cc4125;
+
+  color: white;
+}
+
+/* ========================= */
+/* 小区分 */
+/* ========================= */
+
+.section {
+
+  margin-bottom: 15px;
+
+  background-color: white;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+}
+
+/* ヘッダー */
+.section-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 15px 20px;
+
+  cursor: pointer;
+
+  font-size: 18px;
+
+  font-weight: bold;
+}
+
+/* アイコン */
+.toggle-icon {
+
+  font-size: 15px;
+}
+
+/* ========================= */
+/* 一覧 */
+/* ========================= */
+
+.project-list {
+
+  display: none;
+
+  padding: 15px;
+
+  border-top:
+    1px solid #dddddd;
+}
+
+/* 開いた */
+.project-list.open {
+
+  display: block;
+}
+
+/* ========================= */
+/* カード */
+/* ========================= */
+
+.project-card {
+
+  background-color: #fafafa;
+
+  border-radius: 10px;
+
+  padding: 15px;
+
+  margin-bottom: 10px;
+
+  transition: 0.2s;
+
+  cursor: pointer;
+}
+
+/* ホバー */
+.project-card:hover {
+
+  transform: translateY(-2px);
+
+  background-color: #eeeeee;
+
+  
+}
+
+.project-card:active {
+
+  transform: scale(0.97);
+
+}
+
+/* ========================= */
+/* 初回チュートリアル */
+/* ========================= */
+
+.project-card.tutorial {
+
+  position: relative;
+
+  animation:
+    tutorialPulse 1.2s infinite;
+}
+
+.project-card.tutorial::after {
+
+  content:
+    "👇 タップして詳細を見る";
+
+  position: absolute;
+
+  top: -12px;
+  right: 10px;
+
+  background: #cc4125;
+
+  color: white;
+
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  white-space: nowrap;
+
+  box-shadow:
+    0 4px 10px rgba(0,0,0,0.2);
+}
+
+@keyframes tutorialPulse {
+
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.03);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.project-top {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 10px;
+}
+
+.project-circle {
+
+  min-width: 36px;
+
+  height: 36px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background-color: #237e82;
+
+  border-radius: 999px;
+
+  font-weight: bold;
+
+  font-size: 24px;
+
+  color: white;
+
+  box-sizing: border-box;
+}
+
+/* タイトル */
+.project-title {
+
+  font-size: 20px;
+
+  margin: 5px 0;
+
+  font-weight: bold;
+
+  color: black;
+
+}
+
+/* タグ */
+.project-tags {
+
+  display: flex;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+}
+
+/* タグ共通 */
+.tag {
+
+  padding: 10px 16px;
+
+  border-radius: 20px;
+
+  color: white;
+
+  font-size: 14px;
+}
+
+#modal-category-tag {
+
+  display: flex;
+
+  gap: 8px;
+
+  flex-wrap: wrap;
+}
+
+/* 飲食 */
+.food {
+
+  background-color: #dfcc20;
+}
+
+/* 展示 */
+.exhibition {
+
+  background-color: #7bd071;
+}
+
+/* 体験 */
+.experience {
+
+  background-color: #6ebbcf;
+}
+
+/* パフォーマンス */
+.performance {
+
+  background-color: #cd82ed;
+}
+
+/* 販売 */
+.sale {
+
+  background-color: #df8020;
+}
+
+.food-text {
+
+  color: #dfcc20;
+}
+
+.exhibition-text {
+
+  color: #7bd071;
+}
+
+.experience-text {
+
+  color: #6ebbcf;
+}
+
+.performance-text {
+
+  color: #cd82ed;
+}
+
+.sale-text {
+
+  color: #df8020;
+}
+
+/* 場所 */
+.place {
+
+  background-color: #555555;
+}
+
+/* ========================= */
+/* モーダル */
+/* ========================= */
+
+/* 背景 */
+.modal {
+
+  display: none;
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background-color:
+    rgba(0, 0, 0, 0.5);
+
+  backdrop-filter: blur(4px);
+
+  justify-content: center;
+
+  align-items: center;
+
+  z-index: 1000;
+
+
+}
+
+/* 表示 */
+.modal.show {
+
+  display: flex;
+}
+
+/* 本体 */
+.modal-content {
+
+  background-color: white;
+
+  width: 90%;
+
+  max-width: 500px;
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  border-radius: 20px;
+
+  padding: 25px;
+
+  position: relative;
+
+  animation:
+    popup 0.45s
+    cubic-bezier(0.18, 1.2, 0.4, 1);
+
+  box-shadow:
+  0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+/* アニメーション */
+@keyframes popup {
+
+  0% {
+
+    transform:
+      translateY(40px)
+      scale(0.75);
+
+    opacity: 0;
+  }
+
+  60% {
+
+    transform:
+      translateY(-8px)
+      scale(1.03);
+
+    opacity: 1;
+  }
+
+  100% {
+
+    transform:
+      translateY(0)
+      scale(1);
+
+    opacity: 1;
+  }
+
+}
+/* 閉じる */
+.close-button {
+
+  position: absolute;
+
+  top: 15px;
+
+  right: 20px;
+
+  font-size: 30px;
+
+  cursor: pointer;
+}
+
+/* 画像 */
+/* 通常画像 */
+.modal-images img {
+
+  width: 100%;
+  border-radius: 12px;
+
+}
+
+/* 1枚だけ */
+.modal-images.single-image img {
+
+  max-width: 500px;
+
+  width: 100%;
+
+  margin: 0 auto;
+
+  display: block;
+
+}
+
+/* ========================= */
+/* モーダル上部 */
+/* ========================= */
+
+.modal-header {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 20px;
+}
+
+#modal-number {
+
+  min-width: 40px;
+
+  height: 40px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background-color: #237e82;
+
+  border-radius: 999px;
+
+  font-weight: bold;
+
+  font-size: 28px;
+
+  color: white;
+
+  box-sizing: border-box;
+}
+
+/* タイトル */
+#modal-title {
+
+  width: 100%;
+
+  margin: 5px 0 0;
+}
+
 /* ========================= */
 /* フッター */
 /* ========================= */
@@ -311,6 +870,7 @@ body {
 
   line-height: 1.8;
 }
+
 /* ========================= */
 /* スマホ対応 */
 /* ========================= */
@@ -422,5 +982,114 @@ body {
 
     font-size: 13px;
 
+  }
+}
+/* ========================= */
+/* 隠し演出 */
+/* ========================= */
+
+.hero-title.secret-active {
+
+  animation:
+    glow 1s ease,
+    shake 0.5s ease;
+}
+
+/* 光る */
+@keyframes glow {
+
+  0% {
+
+    text-shadow:
+      0 0 0px white;
+  }
+
+  50% {
+
+    text-shadow:
+      0 0 25px white,
+      0 0 50px #ffd700;
+  }
+
+  100% {
+
+    text-shadow:
+      0 0 0px white;
+  }
+}
+
+/* 少し揺れる */
+@keyframes shake {
+
+  0% {
+
+    transform: translateX(0);
+  }
+
+  25% {
+
+    transform: translateX(-5px);
+  }
+
+  50% {
+
+    transform: translateX(5px);
+  }
+
+  75% {
+
+    transform: translateX(-5px);
+  }
+
+  100% {
+
+    transform: translateX(0);
+  }
+}
+
+/* 紙吹雪 */
+.confetti {
+
+  position: fixed;
+
+  width: 10px;
+
+  height: 10px;
+
+  top: -10px;
+
+  border-radius: 2px;
+
+  pointer-events: none;
+
+  animation:
+    fall 3s linear forwards;
+
+  z-index: 9999;
+}
+
+@keyframes fall {
+
+  0% {
+
+    transform:
+      translate(0, 0)
+      rotate(0deg);
+
+    opacity: 1;
+  }
+
+  100% {
+
+    transform:
+      translate(
+        calc(
+          (var(--drift) - 0.5) * 400px
+        ),
+        110vh
+      )
+      rotate(720deg);
+
+    opacity: 0;
   }
 }
