@@ -328,28 +328,104 @@ function createProjectList(data) {
 
   contentArea.innerHTML = "";
 
-  data.forEach(project => {
+  data.forEach(product => {
 
     const card = document.createElement("div");
 
-    card.className = "project-card";
+    card.className = "product-card";
 
     card.innerHTML = `
-      <div class="project-top">
+      <div class="product-container">
 
-        <div class="project-title">
-          ${project.name}
+        <div class="product-image">
+          <img src="${product.image}" alt="${product.name}">
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-name">
+            ${product.name}
+          </div>
+
+          <div class="product-price">
+            ${product.price}円
+          </div>
+
+          <div class="quantity-box">
+
+            <button class="minus">
+              −
+            </button>
+
+            <span class="count">
+              ${product.quantity}
+            </span>
+
+            <button class="plus">
+              ＋
+            </button>
+
+          </div>
+
         </div>
 
       </div>
     `;
+
+    const count =
+      card.querySelector(".count");
+
+    card.querySelector(".plus")
+      .addEventListener("click", () => {
+
+        product.quantity++;
+
+        count.textContent =
+          product.quantity;
+
+        updateTotal();
+
+      });
+
+    card.querySelector(".minus")
+      .addEventListener("click", () => {
+
+        if (product.quantity > 0) {
+
+          product.quantity--;
+
+          count.textContent =
+            product.quantity;
+
+          updateTotal();
+
+        }
+
+      });
 
     contentArea.appendChild(card);
 
   });
 
 }
+function updateTotal() {
 
+  let total = 0;
+
+  products.forEach(product => {
+
+    total +=
+      product.price *
+      product.quantity;
+
+  });
+
+  document.getElementById(
+    "total-price"
+  ).textContent =
+    `合計金額：${total}円`;
+
+}
 // =========================
 // モーダルを閉じる
 // =========================
