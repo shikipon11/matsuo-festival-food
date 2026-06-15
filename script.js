@@ -368,7 +368,11 @@ function createProjectList(data) {
 
       </div>
     `;
+    contentArea.appendChild(card);
 
+  });
+
+}
   
 // =========================
 // モーダルを閉じる
