@@ -362,20 +362,6 @@ function createProjectList(data) {
             ${product.price}円
           </div>
 
-          <div class="quantity-box">
-
-            <button class="minus">
-              −
-            </button>
-
-            <span class="count">
-              ${product.quantity}
-            </span>
-
-            <button class="plus">
-              ＋
-            </button>
-
           </div>
 
         </div>
@@ -383,60 +369,7 @@ function createProjectList(data) {
       </div>
     `;
 
-    const count =
-      card.querySelector(".count");
-
-    card.querySelector(".plus")
-      .addEventListener("click", () => {
-
-        product.quantity++;
-
-        count.textContent =
-          product.quantity;
-
-        updateTotal();
-
-      });
-
-    card.querySelector(".minus")
-      .addEventListener("click", () => {
-
-        if (product.quantity > 0) {
-
-          product.quantity--;
-
-          count.textContent =
-            product.quantity;
-
-          updateTotal();
-
-        }
-
-      });
-
-    contentArea.appendChild(card);
-
-  });
-
-}
-function updateTotal() {
-
-  let total = 0;
-
-  products.forEach(product => {
-
-    total +=
-      product.price *
-      product.quantity;
-
-  });
-
-  document.getElementById(
-    "total-price"
-  ).textContent =
-    `合計金額：${total}円`;
-
-}
+  
 // =========================
 // モーダルを閉じる
 // =========================
