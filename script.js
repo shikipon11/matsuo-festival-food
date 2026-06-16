@@ -48,7 +48,7 @@ const products = [
     {
   name: "レモネード",
   section: "模擬店",
-  price: "200円<br>蜂蜜入り 300円",
+  price: "ノーマル 200円<br>蜂蜜入り 300円",
   quantity: 0,
   image: ["images/A46B3191-6339-4825-AD63-B47F99E35908.jpeg"]
 },
