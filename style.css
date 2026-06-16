@@ -377,7 +377,7 @@ h1 {
 .product-name {
   grid-column: 2;
   grid-row: 1;
-
+  color:cc4125;
   font-size: 30px;
   font-weight: bold;
 }
