@@ -41,14 +41,14 @@ const products = [
     {
   name: "焼き鳥",
   section: "模擬店",
-  price: "3本400円<br>10本1000円",
+  price: "3本 400円<br>10本 1000円",
   quantity: 0,
   image: ["images/ED01DA8A-0670-4E2C-A34A-CAD3635ED83E.jpeg"]
 },
     {
   name: "レモネード",
   section: "模擬店",
-  price: "200円<br>蜂蜜入り300円",
+  price: "200円<br>蜂蜜入り 300円",
   quantity: 0,
   image: ["images/A46B3191-6339-4825-AD63-B47F99E35908.jpeg"]
 },
