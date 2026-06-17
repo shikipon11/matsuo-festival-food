@@ -259,7 +259,12 @@ body {
     "Zen Old Mincho",
     serif;
 }
-
+#caution-statement{
+  text-align: right;
+  margin: 12px 16px;
+  font-size: 0.9rem;
+  color: #666;
+}
 /* ========================= */
 /* コンテナ */
 /* ========================= */
