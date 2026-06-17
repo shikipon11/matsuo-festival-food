@@ -261,7 +261,7 @@ body {
 }
 #caution-statement{
   text-align: center;
-  margin: 6px 16px;
+  margin-top: 10px ;
   font-size: 0.9rem;
   color: #666;
 }
@@ -274,7 +274,7 @@ body {
 
   margin: auto;
 
-  padding: 20px;
+  padding: 10px;
 
   padding-bottom: 80px;
 
