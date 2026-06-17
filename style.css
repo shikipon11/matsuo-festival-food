@@ -988,10 +988,15 @@ h1 {
 
   
 
-  .product-price{
+.product-price{
     font-size:18px;
   }
-
+.product-description {
+  margin-top: 6px;
+  font-size: 18px;
+  color: #BF9000;
+  line-height: 1.4;
+}
 }
 /* ========================= */
 /* 隠し演出 */
