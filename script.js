@@ -28,7 +28,7 @@ const products = [
   name: "ポップコーン",
   section: "模擬店",
   price: "200円",
-  description:"塩,キャラメル,夢フル"
+  description:"塩,キャラメル,夢フル",
   image: ["images/C2CF8B4C-00ED-4072-8A7E-60A8271EE4ED.jpeg"]
 },
     {
