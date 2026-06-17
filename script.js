@@ -66,11 +66,151 @@ const products = [
   description:"",
   image: ["images/IMG_0525.JPG"]
 },
-    {
-  name: "あれこれ",
+{
+  name: "きゅうり",
   section: "飲食係",
-  price: "300円",
-  description:"",
+  price: "0",
+  description: "",
+  image: [""]
+},
+{
+  name: "トマト",
+  section: "飲食係",
+  price: "0",
+  description: "",
+  image: [""]
+},
+{
+  name: "ミニトマト",
+  section: "飲食係",
+  price: "0",
+  description: "",
+  image: [""]
+},
+{
+  name: "ピーマン",
+  section: "飲食係",
+  price: "0",
+  description: "",
+  image: [""]
+},
+{
+  name: "南瓜",
+  section: "飲食係",
+  price: "0",
+  description: "",
+  image: [""]
+},
+{
+  name: "ズッキーニ",
+  section: "飲食係",
+  price: "0",
+  description: "",
+  image: [""]
+},
+{
+  name: "アスパラガス",
+  section: "飲食係",
+  price: "0",
+  description: "",
+  image: [""]
+},
+{
+  name: "新玉ねぎ",
+  section: "飲食係",
+  price: "0",
+  description: "",
+  image: [""]
+},
+{
+  name: "じゃがいも",
+  section: "飲食係",
+  price: "0",
+  description: "",
+  image: [""]
+},
+{
+  name: "さつまいも",
+  section: "飲食係",
+  price: "0",
+  description: "",
+  image: [""]
+},
+{
+  name: "ブルーベリー",
+  section: "飲食係",
+  price: "0",
+  description: "",
+  image: [""]
+},
+{
+  name: "桃",
+  section: "飲食係",
+  price: "0",
+  description: "",
+  image: [""]
+},
+{
+  name: "ラスク",
+  section: "飲食係",
+  price: "0",
+  description: "",
+  image: [""]
+},
+{
+  name: "バウムクーヘン",
+  section: "飲食係",
+  price: "0",
+  description: "",
+  image: [""]
+},
+{
+  name: "米農家が作る　米粉シフォンケーキ",
+  section: "飲食係",
+  price: "0",
+  description: "",
+  image: [""]
+},
+{
+  name: "米農家が作る　米粉マフィン",
+  section: "飲食係",
+  price: "0",
+  description: "",
+  image: [""]
+},
+{
+  name: "郡山名物　クリームボックス",
+  section: "飲食係",
+  price: "0",
+  description: "",
+  image: [""]
+},
+{
+  name: "生ラーメン",
+  section: "飲食係",
+  price: "0",
+  description: "",
+  image: [""]
+},
+{
+  name: "福島果物たくさんのフルーツサンド",
+  section: "飲食係",
+  price: "0",
+  description: "",
+  image: [""]
+},
+{
+  name: "地元の牧場のアイスキャンディー",
+  section: "飲食係",
+  price: "0",
+  description: "",
+  image: [""]
+},
+{
+  name: "地元の名物　玄米パン",
+  section: "飲食係",
+  price: "0",
+  description: "",
   image: [""]
 },
       {
