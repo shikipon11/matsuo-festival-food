@@ -397,6 +397,13 @@ h1 {
   font-size: 24px;
   color: #BF9000;
 }
+.product-name,
+.product-price,
+.product-description {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
 .product-image img {
   width: 180px;
   height: 180px;
