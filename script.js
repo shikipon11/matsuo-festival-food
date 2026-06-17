@@ -57,14 +57,14 @@ const products = [
   section: "模擬店",
   price: "300円",
   quantity: 0,
-  image: [""]
+  image: ["images/IMG_0525.JPG"]
 },
     {
   name: "たこ焼き",
   section: "模擬店",
   price: "200円",
   quantity: 0,
-  image: [""]
+  image: ["images/IMG_0526.JPG"]
 },
     {
   name: "あれこれ",
