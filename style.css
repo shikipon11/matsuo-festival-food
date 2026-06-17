@@ -389,6 +389,12 @@ h1 {
 
   font-size: 24px;
 }
+.product-description {
+  margin-top: 6px;
+  font-size: 24px;
+  color: #BF9000;
+  line-height: 1.4;
+}
 .product-image img {
   width: 180px;
   height: 180px;
@@ -992,10 +998,7 @@ h1 {
     font-size:18px;
   }
 .product-description {
-  margin-top: 6px;
   font-size: 18px;
-  color: #BF9000;
-  line-height: 1.4;
 }
 }
 /* ========================= */
