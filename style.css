@@ -364,11 +364,16 @@ h1 {
   display: block;
 }
 .product-container {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px 20px;
-  align-items: center;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
 }
 .product-image {
   grid-row: 1 / 3;
