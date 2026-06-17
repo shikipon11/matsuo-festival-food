@@ -57,14 +57,14 @@ const products = [
   section: "模擬店",
   price: "300円",
   description:"クッキーアンドクリーム<br>キャラメルプレッツェル<br>いちご",
-  image: ["images/IMG_0525.JPG"]
+  image: ["images/IMG_0526.JPG"]
 },
     {
   name: "たこ焼き",
   section: "模擬店",
   price: "200円",
   description:"",
-  image: ["images/IMG_0526.JPG"]
+  image: ["images/IMG_0525.JPG"]
 },
     {
   name: "あれこれ",
