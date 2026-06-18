@@ -416,6 +416,27 @@ h1 {
   object-fit: cover;
   border-radius: 10px;
 }
+.subtabs{
+  display:flex;
+  gap:8px;
+  margin:15px 0;
+  flex-wrap:wrap;
+}
+
+.hidden{
+  display:none;
+}
+
+.subtab-button{
+  padding:8px 14px;
+  border:none;
+  border-radius:20px;
+  cursor:pointer;
+}
+
+.subtab-button.active{
+  font-weight:bold;
+}
 /* ========================= */
 /* カード */
 /* ========================= */
