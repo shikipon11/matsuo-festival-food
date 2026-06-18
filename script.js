@@ -1,5 +1,5 @@
 // =========================
-// script.js
+// script.js　企画一覧をコピーした形なのでタグや関数の名前が変なところに注意
 // =========================
 
 const products = [
@@ -237,7 +237,7 @@ const products = [
 {
   name: "焼きそば",
   section: "飲食係",
-  category: "飲食",
+  category: "軽食",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -245,7 +245,7 @@ const products = [
 {
   name: "手作りキャベツメンチ",
   section: "飲食係",
-  category: "飲食",
+  category: "軽食",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -253,7 +253,7 @@ const products = [
 {
   name: "手作り餃子メンチ",
   section: "飲食係",
-  category: "飲食",
+  category: "軽食",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -261,7 +261,7 @@ const products = [
 {
   name: "ザンギ",
   section: "飲食係",
-  category: "飲食",
+  category: "軽食",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -269,7 +269,7 @@ const products = [
 {
   name: "チュロス",
   section: "飲食係",
-  category: "飲食",
+  category: "軽食",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -277,7 +277,7 @@ const products = [
 {
   name: "バタフライピーレモネードスカッシュ",
   section: "飲食係",
-  category: "飲食",
+  category: "軽食",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -285,7 +285,7 @@ const products = [
 {
   name: "ハイビスカスレモネードスカッシュ",
   section: "飲食係",
-  category: "飲食",
+  category: "軽食",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -293,7 +293,7 @@ const products = [
 {
   name: "調理パン",
   section: "飲食係",
-  category: "飲食",
+  category: "軽食",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
