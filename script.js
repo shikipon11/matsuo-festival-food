@@ -490,48 +490,42 @@ tabButtons.forEach(button => {
     "click",
     () => {
 
-      /* active削除 */
       tabButtons.forEach(btn => {
-
         btn.classList.remove("active");
-
       });
 
-      /* active追加 */
       button.classList.add("active");
 
-      /* データ取得 */
-      const tab =
-        button.dataset.tab;
+      const tab = button.dataset.tab;
 
-          }
-    if (tab === "number") {
+      if (tab === "number") {
 
-  foodSubtabs.classList.add("hidden");
+        foodSubtabs.classList.add("hidden");
 
-  renderNumberView();
+        renderNumberView();
 
-}
+      }
 
-if (tab === "category") {
+      if (tab === "category") {
 
-  foodSubtabs.classList.remove("hidden");
+        foodSubtabs.classList.remove("hidden");
 
-  renderCategoryView();
+        renderCategoryView();
 
-}
+      }
 
-if (tab === "place") {
+      if (tab === "place") {
 
-  foodSubtabs.classList.add("hidden");
+        foodSubtabs.classList.add("hidden");
 
-  renderPlaceView();
+        renderPlaceView();
 
-}
+      }
+
+    }
   );
 
 });
-
 // =========================
 // 模擬店
 // =========================
@@ -581,27 +575,6 @@ function renderPlaceView() {
 
 }
 //仮
-if (tab === "number") {
-
-  foodSubtabs.classList.add("hidden");
-
-  renderNumberView();
-
-}
-
-if (tab === "category") {
-
-  renderCategoryView();
-
-}
-
-if (tab === "place") {
-
-  foodSubtabs.classList.add("hidden");
-
-  renderPlaceView();
-
-}
 subtabButtons.forEach(button => {
 
   button.addEventListener(
