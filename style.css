@@ -421,6 +421,7 @@ h1 {
   gap:8px;
   margin:15px 0;
   flex-wrap:wrap;
+  justify-content:center;
 }
 
 .hidden{
@@ -433,7 +434,6 @@ h1 {
   border-radius:30px;
   cursor:pointer;
   min-width:100px;
-  justify-content:center;
 }
 
 .subtab-button.active{
