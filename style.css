@@ -433,6 +433,7 @@ h1 {
   border-radius:30px;
   cursor:pointer;
   min-width:100px;
+  justify-content:center;
 }
 
 .subtab-button.active{
