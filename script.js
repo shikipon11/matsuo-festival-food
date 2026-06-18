@@ -69,6 +69,7 @@ const products = [
 {
   name: "きゅうり",
   section: "飲食係",
+  category: "農産物",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -76,6 +77,7 @@ const products = [
 {
   name: "トマト",
   section: "飲食係",
+  category: "農産物",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -83,6 +85,7 @@ const products = [
 {
   name: "ミニトマト",
   section: "飲食係",
+  category: "農産物",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -90,6 +93,7 @@ const products = [
 {
   name: "ピーマン",
   section: "飲食係",
+  category: "農産物",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -97,6 +101,7 @@ const products = [
 {
   name: "南瓜",
   section: "飲食係",
+  category: "農産物",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -104,6 +109,7 @@ const products = [
 {
   name: "ズッキーニ",
   section: "飲食係",
+  category: "農産物",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -111,6 +117,7 @@ const products = [
 {
   name: "アスパラガス",
   section: "飲食係",
+  category: "農産物",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -118,6 +125,7 @@ const products = [
 {
   name: "新玉ねぎ",
   section: "飲食係",
+  category: "農産物",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -125,6 +133,7 @@ const products = [
 {
   name: "じゃがいも",
   section: "飲食係",
+  category: "農産物",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -132,6 +141,7 @@ const products = [
 {
   name: "さつまいも",
   section: "飲食係",
+  category: "農産物",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -139,6 +149,7 @@ const products = [
 {
   name: "ブルーベリー",
   section: "飲食係",
+  category: "農産物",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -146,6 +157,7 @@ const products = [
 {
   name: "桃",
   section: "飲食係",
+  category: "農産物",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -153,6 +165,7 @@ const products = [
 {
   name: "ラスク",
   section: "飲食係",
+  category: "加工品",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -160,6 +173,7 @@ const products = [
 {
   name: "バウムクーヘン",
   section: "飲食係",
+  category: "加工品",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -167,6 +181,7 @@ const products = [
 {
   name: "米農家が作る　米粉シフォンケーキ",
   section: "飲食係",
+  category: "加工品",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -174,6 +189,7 @@ const products = [
 {
   name: "米農家が作る　米粉マフィン",
   section: "飲食係",
+  category: "加工品",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -181,6 +197,7 @@ const products = [
 {
   name: "郡山名物　クリームボックス",
   section: "飲食係",
+  category: "加工品",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -188,6 +205,7 @@ const products = [
 {
   name: "生ラーメン",
   section: "飲食係",
+  category: "加工品",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -195,6 +213,7 @@ const products = [
 {
   name: "福島果物たくさんのフルーツサンド",
   section: "飲食係",
+  category: "加工品",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -202,6 +221,7 @@ const products = [
 {
   name: "地元の牧場のアイスキャンディー",
   section: "飲食係",
+  category: "加工品",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -209,6 +229,7 @@ const products = [
 {
   name: "地元の名物　玄米パン",
   section: "飲食係",
+  category: "加工品",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -216,6 +237,7 @@ const products = [
 {
   name: "焼きそば",
   section: "飲食係",
+  category: "飲食",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -223,6 +245,7 @@ const products = [
 {
   name: "手作りキャベツメンチ",
   section: "飲食係",
+  category: "飲食",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -230,6 +253,7 @@ const products = [
 {
   name: "手作り餃子メンチ",
   section: "飲食係",
+  category: "飲食",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -237,6 +261,7 @@ const products = [
 {
   name: "ザンギ",
   section: "飲食係",
+  category: "飲食",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -244,6 +269,7 @@ const products = [
 {
   name: "チュロス",
   section: "飲食係",
+  category: "飲食",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -251,6 +277,7 @@ const products = [
 {
   name: "バタフライピーレモネードスカッシュ",
   section: "飲食係",
+  category: "飲食",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -258,6 +285,7 @@ const products = [
 {
   name: "ハイビスカスレモネードスカッシュ",
   section: "飲食係",
+  category: "飲食",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -265,6 +293,7 @@ const products = [
 {
   name: "調理パン",
   section: "飲食係",
+  category: "飲食",
   price: "0",
   description: "",
   image: ["images/no-images.png"]
@@ -313,6 +342,11 @@ const modalImages =
   document.getElementById(
     "modal-images"
   );
+const foodSubtabs =
+  document.getElementById("food-subtabs");
+
+const subtabButtons =
+  document.querySelectorAll(".subtab-button");
 
 // =========================
 // ハンバーガーメニュー
@@ -511,13 +545,25 @@ function renderNumberView() {
 // =========================
 function renderCategoryView() {
 
+  foodSubtabs.classList.remove("hidden");
+
+  renderFoodCategory("農産物");
+
+}
+function renderFoodCategory(category){
+
   createProjectList(
+
     products.filter(
-      p => p.section === "飲食係"
+      p =>
+        p.section === "飲食係" &&
+        p.category === category
     )
+
   );
 
 }
+
 // =========================
 // 松尾祭地域応援　
 // =========================
@@ -531,6 +577,48 @@ function renderPlaceView() {
 
 }
 //仮
+if (tab === "number") {
+
+  foodSubtabs.classList.add("hidden");
+
+  renderNumberView();
+
+}
+
+if (tab === "category") {
+
+  renderCategoryView();
+
+}
+
+if (tab === "place") {
+
+  foodSubtabs.classList.add("hidden");
+
+  renderPlaceView();
+
+}
+subtabButtons.forEach(button => {
+
+  button.addEventListener(
+    "click",
+    () => {
+
+      subtabButtons.forEach(btn => {
+        btn.classList.remove("active");
+      });
+
+      button.classList.add("active");
+
+      renderFoodCategory(
+        button.dataset.category
+      );
+
+    }
+  );
+
+});
+
 function createProjectList(data) {
 
   contentArea.innerHTML = "";
