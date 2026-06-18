@@ -504,26 +504,30 @@ tabButtons.forEach(button => {
       const tab =
         button.dataset.tab;
 
-      /* 表示切り替え */
-      if (tab === "number") {
+          }
+    if (tab === "number") {
 
-        renderNumberView();
+  foodSubtabs.classList.add("hidden");
 
-      }
+  renderNumberView();
 
-      if (tab === "category") {
+}
 
-        renderCategoryView();
+if (tab === "category") {
 
-      }
+  foodSubtabs.classList.remove("hidden");
 
-      if (tab === "place") {
+  renderCategoryView();
 
-        renderPlaceView();
+}
 
-      }
+if (tab === "place") {
 
-    }
+  foodSubtabs.classList.add("hidden");
+
+  renderPlaceView();
+
+}
   );
 
 });
