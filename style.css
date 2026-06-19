@@ -516,24 +516,6 @@ h1 {
   flex:1;
 }
 
-.product-price{
-  font-weight:bold;
-  margin-bottom:4px;
-}
-
-.product-description{
-  font-size:0.9rem;
-  color:#666;
-}
-
-.project-congestion{
-  flex-shrink:0;
-
-  padding:4px 8px;
-  border-radius:999px;
-  font-size:0.85rem;
-  font-weight:bold;
-}
 /* ========================= */
 /* 初回チュートリアル */
 /* ========================= */
