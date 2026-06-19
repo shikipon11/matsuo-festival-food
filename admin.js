@@ -130,7 +130,7 @@ function updateStatus(number, status){
 const list =
 document.getElementById("products-list");
 
-productss.forEach(products => {
+products.forEach(products => {
 
   const card =
   document.createElement("div");
