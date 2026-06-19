@@ -403,12 +403,12 @@ h1 {
   grid-column: 2;
   grid-row: 2;
   font-size: 24px;
-  margin:4px;
+  margin:1px
 }
 .product-description {
   font-size: 24px;
   color: #BF9000;
-  margin:4px;
+  margin:2px;
 }
 .product-name,
 .product-price,
