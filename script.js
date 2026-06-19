@@ -360,6 +360,8 @@ let statusData = {};
 
 const API_URL =
   "https://script.google.com/macros/s/AKfycbyr9GAES93Rw8YTLaOs-sVSrkaugyt5UY48ziiHNms8modz9eAfFmJhsgmQAcr52aUZ-g/exec";
+FOOD_API_URL =
+  "https://script.google.com/macros/s/AKfycbziTPEatkxrpqHk9o1zBxAmnxqAwTp54XiEFLHWueSwBRwcfpfchMUPAnmmtTyptTqE/exec";
 
 async function loadStatus() {
 
@@ -383,7 +385,28 @@ async function loadStatus() {
     console.error(error);
 
   }
+    let foodStatus = "";
+    
+    async function loadFoodStatus() {
 
+  try {
+
+    const response =
+      await fetch(FOOD_API_URL);
+
+    const data =
+      await response.json();
+
+    foodStatus =
+      data.food;
+
+  } catch(error) {
+
+    console.error(error);
+
+  }
+
+}
 }
 // =========================
 // ハンバーガーメニュー
@@ -521,7 +544,10 @@ async function init() {
   renderNumberView();
 
   // あとで混雑状況取得
-  await loadStatus();
+  await Promise.all([
+  loadStatus(),
+  loadFoodStatus()
+]);
 
   // 取得後に再描画
   renderNumberView();
@@ -663,20 +689,34 @@ function renderCategoryView() {
 
   foodSubtabs.classList.remove("hidden");
 
+  contentArea.innerHTML = `
+
+    <div class="project-congestion ${getStatusClass(foodStatus)}">
+      ${getStatusLabel(foodStatus)}
+    </div>
+
+  `;
+
   renderFoodCategory("農産物");
 
 }
-
 function renderFoodCategory(category) {
 
-  createProjectList(
+  const statusHtml = `
+    <div class="project-congestion ${getStatusClass(foodStatus)}">
+      ${getStatusLabel(foodStatus)}
+    </div>
+  `;
 
+  contentArea.innerHTML = statusHtml;
+
+  createProjectList(
     products.filter(
       p =>
       p.section === "飲食係" &&
       p.category === category
-    )
-
+    ),
+    true
   );
 
 }
@@ -715,9 +755,13 @@ subtabButtons.forEach(button => {
 
 });
 
-function createProjectList(data) {
-
-  contentArea.innerHTML = "";
+function createProjectList(
+  data,
+  append = false
+) {
+  if(!append){
+    contentArea.innerHTML = "";
+  }
 
   data.forEach(product => {
 
