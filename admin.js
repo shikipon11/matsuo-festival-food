@@ -128,47 +128,47 @@ function updateStatus(number, status){
 
 }
 const list =
-document.getElementById("project-list");
+document.getElementById("products-list");
 
-projects.forEach(project => {
+productss.forEach(products => {
 
   const card =
   document.createElement("div");
 
   card.className = "admin-card";
   
-  card.dataset.number = project.number;
+  card.dataset.number = products.number;
 
   card.innerHTML = `
   
   <div class="title">
-    ${project.number}
-    ${project.title}
+    ${products.number}
+    ${products.title}
   </div>
 
   <div class="buttons">
 
     <button
       class="empty"
-      onclick="updateStatus(${project.number}, 'empty')">
+      onclick="updateStatus(${products.number}, 'empty')">
       🟢
     </button>
 
     <button
       class="normal"
-      onclick="updateStatus(${project.number}, 'normal')">
+      onclick="updateStatus(${products.number}, 'normal')">
       🟡
     </button>
 
     <button
       class="busy"
-      onclick="updateStatus(${project.number}, 'busy')">
+      onclick="updateStatus(${products.number}, 'busy')">
       🔴
     </button>
 
     <button
       class="limit"
-      onclick="updateStatus(${project.number}, 'limit')">
+      onclick="updateStatus(${products.number}, 'limit')">
       ⚫
     </button>
 
