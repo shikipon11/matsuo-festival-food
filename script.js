@@ -385,7 +385,8 @@ async function loadStatus() {
     console.error(error);
 
   }
-    let foodStatus = "";
+}
+let foodStatus = "";
     
     async function loadFoodStatus() {
 
@@ -407,7 +408,7 @@ async function loadStatus() {
   }
 
 }
-}
+
 // =========================
 // ハンバーガーメニュー
 // =========================
