@@ -739,35 +739,33 @@ function createProjectList(data) {
 
         <div class="product-info">
 
-          <div class="product-name">
-            ${product.name}
-          </div>
+    
 
          <div class="product-bottom">
+         
+         <div class="product-detail">
 
-  <div class="product-detail">
-
-    <div class="product-price">
-      ${product.price}
-    </div>
-
-    <div class="product-description">
-      ${product.description || ""}
-    </div>
-
-  </div>
-
-  ${
-    product.section === "模擬店"
-    ? `
+         <div class="product-name">
+            ${product.name}
+          </div>
+          
+         <div class="product-price">
+         ${product.price}
+         </div>
+         
+         <div class="product-description">
+         ${product.description || ""}
+         </div>
+         
+         </div>
+         ${
+             product.section === "模擬店"? `
       <div class="project-congestion ${getStatusClass(status)}">
         ${getStatusLabel(status)}
       </div>
-    `
-    : ""
-  }
-
-</div>
+      `: ""
+         }
+         </div>
 
         </div>
 
