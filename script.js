@@ -641,7 +641,7 @@ function getStatusLabel(status) {
       return "⚫ 売り切れ";
 
     default:
-      return "読み込み中";
+      return "⚪ 読み込み中";
 
   }
 
