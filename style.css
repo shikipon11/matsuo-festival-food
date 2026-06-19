@@ -395,6 +395,7 @@ h1 {
   color:#cc4125;
   font-size: 30px;
   font-weight: bold;
+   margin: 0;
 }
 
 .product-price {
@@ -412,7 +413,6 @@ h1 {
 .product-name,
 .product-price,
 .product-description {
-  margin: 0;
   padding: 0;
   line-height: 1;
 }
