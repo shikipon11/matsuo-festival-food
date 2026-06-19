@@ -739,16 +739,14 @@ function createProjectList(data) {
 
         <div class="product-info">
 
-    
+        <div class="product-name">
+            ${product.name}
+          </div>
 
          <div class="product-bottom">
          
          <div class="product-detail">
-
-         <div class="product-name">
-            ${product.name}
-          </div>
-          
+ 
          <div class="product-price">
          ${product.price}
          </div>
