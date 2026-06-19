@@ -4,6 +4,7 @@
 
 const products = [
   {
+  number:1,
   name: "ワッフル",
   section: "模擬店",
   price: "0",
@@ -11,55 +12,63 @@ const products = [
   image: ["images/B8B6702C-AEC4-4301-822E-DB9095A9BEDF.jpeg"]
 },
   {
+  number:2,
   name: "チョコバナナ",
   section: "模擬店",
   price: "300円",
   description:"",
   image: ["images/5E6C9A38-FC99-4B18-9C24-A5066DFCC89F.jpeg"]
 },
-    {
+  {
+  number:3,
   name: "タピオカ",
   section: "模擬店",
   price: "400円",
   description:"",
   image: ["images/3807A46D-9843-4BFF-93C8-16383E6A4D41.jpeg"]
 },
-    {
+  {
+  number:4,
   name: "ポップコーン",
   section: "模擬店",
   price: "200円",
   description:"塩,キャラメル,夢フル",
   image: ["images/C2CF8B4C-00ED-4072-8A7E-60A8271EE4ED.jpeg"]
 },
-    {
+  {
+  number:5,
   name: "フランクフルト",
   section: "模擬店",
   price: "200円",
   description:"",
   image: ["images/4A964AA1-8E3E-4C3F-8489-0C16903063B9.jpeg"]
 },
-    {
+  {
+  number:6,
   name: "焼き鳥",
   section: "模擬店",
   price: "3本 400円<br>10本 1000円",
   description:"塩,美味だれ",
   image: ["images/ED01DA8A-0670-4E2C-A34A-CAD3635ED83E.jpeg"]
 },
-    {
+  {
+  number:7,
   name: "レモネード",
   section: "模擬店",
   price: "ノーマル 200円<br>蜂蜜入り 300円",
   description:"",
   image: ["images/A46B3191-6339-4825-AD63-B47F99E35908.jpeg"]
 },
-    {
+  {
+  number:8,
   name: "クレープ",
   section: "模擬店",
   price: "300円",
   description:"クッキーアンドクリーム<br>キャラメルプレッツェル<br>いちご",
   image: ["images/IMG_0526.JPG"]
 },
-    {
+  {
+  number:9,
   name: "たこ焼き",
   section: "模擬店",
   price: "200円",
@@ -348,6 +357,28 @@ const foodSubtabs =
 const subtabButtons =
   document.querySelectorAll(".subtab-button");
 
+let statusData = {};
+
+const API_URL =
+"https://script.google.com/macros/s/AKfycbyr9GAES93Rw8YTLaOs-sVSrkaugyt5UY48ziiHNms8modz9eAfFmJhsgmQAcr52aUZ-g/exec";
+
+async function loadStatus(){
+
+  try{
+
+    const response =
+      await fetch(API_URL);
+
+    statusData =
+      await response.json();
+
+  }catch(error){
+
+    console.error(error);
+
+  }
+
+}
 // =========================
 // ハンバーガーメニュー
 // =========================
@@ -478,7 +509,15 @@ document.addEventListener(
 // 初期表示
 // =========================
 
-renderNumberView();
+async function init(){
+
+  await loadStatus();
+
+  renderNumberView();
+
+}
+
+init();
 
 // =========================
 // タブ切り替え
@@ -529,6 +568,28 @@ tabButtons.forEach(button => {
 // =========================
 // 模擬店
 // =========================
+function getStatusLabel(status){
+
+  switch(status){
+
+    case "empty":
+      return "🟢 空いています";
+
+    case "normal":
+      return "🟡 普通";
+
+    case "busy":
+      return "🔴 混雑";
+
+    case "limit":
+      return "⚫ 売り切れ";
+
+    default:
+      return "不明";
+
+  }
+
+}
 function renderNumberView() {
 
   createProjectList(
@@ -595,18 +656,22 @@ subtabButtons.forEach(button => {
   );
 
 });
-
 function createProjectList(data) {
 
   contentArea.innerHTML = "";
 
   data.forEach(product => {
 
-    const card = document.createElement("div");
+    const card =
+      document.createElement("div");
 
     card.className = "product-card";
 
+    const status =
+      statusData[product.number];
+
     card.innerHTML = `
+
       <div class="product-container">
 
         <div class="product-image">
@@ -619,25 +684,32 @@ function createProjectList(data) {
             ${product.name}
           </div>
 
+          ${product.section === "模擬店" ? `
+          <div class="project-congestion status-${status}">
+          ${getStatusLabel(status)}
+          </div>
+          ` : ""}
+
           <div class="product-price">
             ${product.price}
           </div>
-          
-          <div class="product-description">
-           ${product.description || ""}
-          </div>
 
+          <div class="product-description">
+            ${product.description || ""}
           </div>
 
         </div>
 
       </div>
+
     `;
+
     contentArea.appendChild(card);
 
   });
 
 }
+
   
 // =========================
 // モーダルを閉じる
