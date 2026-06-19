@@ -372,6 +372,13 @@ async function loadStatus(){
     statusData =
       await response.json();
 
+    const now = new Date();
+
+    document.getElementById(
+      "last-update"
+    ).textContent =
+      `最終更新：${now.getHours().toString().padStart(2,"0")}:${now.getMinutes().toString().padStart(2,"0")}`;
+
   }catch(error){
 
     console.error(error);
@@ -519,6 +526,29 @@ async function init(){
 
 init();
 
+setInterval(async ()=>{
+
+  await loadStatus();
+
+  const activeTab =
+    document.querySelector(
+      ".tab-button.active"
+    ).dataset.tab;
+
+  if(activeTab === "number"){
+    renderNumberView();
+  }
+
+  if(activeTab === "category"){
+    renderCategoryView();
+  }
+
+  if(activeTab === "place"){
+    renderPlaceView();
+  }
+
+},900000);
+
 // =========================
 // タブ切り替え
 // =========================
@@ -568,18 +598,40 @@ tabButtons.forEach(button => {
 // =========================
 // 模擬店
 // =========================
+function getStatusClass(status){
+
+  switch(status){
+
+    case "empty":
+      return "status-empty";
+
+    case "normal":
+      return "status-normal";
+
+    case "busy":
+      return "status-busy";
+
+    case "limit":
+      return "status-limit";
+
+    default:
+      return "status-default";
+
+  }
+
+}
 function getStatusLabel(status){
 
   switch(status){
 
     case "empty":
-      return "🟢 空いています";
+      return "🟢 空いてます";
 
     case "normal":
-      return "🟡 普通";
+      return "🟡 やや混雑";
 
     case "busy":
-      return "🔴 混雑";
+      return "🔴 大変混雑";
 
     case "limit":
       return "⚫ 売り切れ";
@@ -685,7 +737,7 @@ function createProjectList(data) {
           </div>
 
           ${product.section === "模擬店" ? `
-          <div class="project-congestion status-${status}">
+          <div class="project-congestion ${getStatusClass(status)}">
           ${getStatusLabel(status)}
           </div>
           ` : ""}
