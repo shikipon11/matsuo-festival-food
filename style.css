@@ -437,16 +437,40 @@ h1 {
 .subtab-button{
   padding:16px 32px;
   font-size:1.1rem;
-  border:none;
-  border-radius:16px;
-  cursor:pointer;
+  font-weight:600;
+
   min-width:140px;
   min-height:56px;
-  font-weight:600;
+
+  border:none;
+  border-radius:16px;
+
+  background:#fff;
+  box-shadow:0 4px 10px rgba(0,0,0,.12);
+
+  cursor:pointer;
+
+  transition:
+    transform .15s,
+    box-shadow .15s;
 }
 
+/* ホバー */
+.subtab-button:hover{
+  transform:translateY(-2px);
+}
+
+/* 押してる瞬間 */
+.subtab-button:active{
+  transform:translateY(2px);
+  box-shadow:0 1px 3px rgba(0,0,0,.15);
+}
 .subtab-button.active{
-  font-weight:bold;
+  transform:translateY(2px);
+  box-shadow:0 1px 3px rgba(0,0,0,.15);
+
+  background:#2563eb;
+  color:white;
 }
 /* ========================= */
 /* カード */
