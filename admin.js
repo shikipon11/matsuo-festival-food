@@ -37,7 +37,7 @@ const products = [
   }
 ];
 const API_URL =
-"https://script.google.com/macros/s/AKfycbxxqs7nc0gnhbGMkelwQKpM9R9CcOKEI5r75PpMz3S4XX1Ve6ONLD_FHet4-zUUbqsS/exec";
+"https://script.google.com/macros/s/AKfycbyr9GAES93Rw8YTLaOs-sVSrkaugyt5UY48ziiHNms8modz9eAfFmJhsgmQAcr52aUZ-g/exec";
 let isUpdating = false;
 
 async function loadCurrentStatus(){
