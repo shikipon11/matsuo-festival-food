@@ -2,318 +2,317 @@
 // script.js　企画一覧をコピーした形なのでタグや関数の名前が変なところに注意
 // =========================
 
-const products = [
+const products = [{
+    number: 1,
+    name: "ワッフル",
+    section: "模擬店",
+    price: "0",
+    description: "",
+    image: ["images/B8B6702C-AEC4-4301-822E-DB9095A9BEDF.jpeg"]
+  },
   {
-  number:1,
-  name: "ワッフル",
-  section: "模擬店",
-  price: "0",
-  description:"",
-  image: ["images/B8B6702C-AEC4-4301-822E-DB9095A9BEDF.jpeg"]
-},
+    number: 2,
+    name: "チョコバナナ",
+    section: "模擬店",
+    price: "300円",
+    description: "",
+    image: ["images/5E6C9A38-FC99-4B18-9C24-A5066DFCC89F.jpeg"]
+  },
   {
-  number:2,
-  name: "チョコバナナ",
-  section: "模擬店",
-  price: "300円",
-  description:"",
-  image: ["images/5E6C9A38-FC99-4B18-9C24-A5066DFCC89F.jpeg"]
-},
+    number: 3,
+    name: "タピオカ",
+    section: "模擬店",
+    price: "400円",
+    description: "",
+    image: ["images/3807A46D-9843-4BFF-93C8-16383E6A4D41.jpeg"]
+  },
   {
-  number:3,
-  name: "タピオカ",
-  section: "模擬店",
-  price: "400円",
-  description:"",
-  image: ["images/3807A46D-9843-4BFF-93C8-16383E6A4D41.jpeg"]
-},
+    number: 4,
+    name: "ポップコーン",
+    section: "模擬店",
+    price: "200円",
+    description: "塩,キャラメル,夢フル",
+    image: ["images/C2CF8B4C-00ED-4072-8A7E-60A8271EE4ED.jpeg"]
+  },
   {
-  number:4,
-  name: "ポップコーン",
-  section: "模擬店",
-  price: "200円",
-  description:"塩,キャラメル,夢フル",
-  image: ["images/C2CF8B4C-00ED-4072-8A7E-60A8271EE4ED.jpeg"]
-},
+    number: 5,
+    name: "フランクフルト",
+    section: "模擬店",
+    price: "200円",
+    description: "",
+    image: ["images/4A964AA1-8E3E-4C3F-8489-0C16903063B9.jpeg"]
+  },
   {
-  number:5,
-  name: "フランクフルト",
-  section: "模擬店",
-  price: "200円",
-  description:"",
-  image: ["images/4A964AA1-8E3E-4C3F-8489-0C16903063B9.jpeg"]
-},
+    number: 6,
+    name: "焼き鳥",
+    section: "模擬店",
+    price: "3本 400円<br>10本 1000円",
+    description: "塩,美味だれ",
+    image: ["images/ED01DA8A-0670-4E2C-A34A-CAD3635ED83E.jpeg"]
+  },
   {
-  number:6,
-  name: "焼き鳥",
-  section: "模擬店",
-  price: "3本 400円<br>10本 1000円",
-  description:"塩,美味だれ",
-  image: ["images/ED01DA8A-0670-4E2C-A34A-CAD3635ED83E.jpeg"]
-},
+    number: 7,
+    name: "レモネード",
+    section: "模擬店",
+    price: "ノーマル 200円<br>蜂蜜入り 300円",
+    description: "",
+    image: ["images/A46B3191-6339-4825-AD63-B47F99E35908.jpeg"]
+  },
   {
-  number:7,
-  name: "レモネード",
-  section: "模擬店",
-  price: "ノーマル 200円<br>蜂蜜入り 300円",
-  description:"",
-  image: ["images/A46B3191-6339-4825-AD63-B47F99E35908.jpeg"]
-},
+    number: 8,
+    name: "クレープ",
+    section: "模擬店",
+    price: "300円",
+    description: "クッキーアンドクリーム<br>キャラメルプレッツェル<br>いちご",
+    image: ["images/IMG_0526.JPG"]
+  },
   {
-  number:8,
-  name: "クレープ",
-  section: "模擬店",
-  price: "300円",
-  description:"クッキーアンドクリーム<br>キャラメルプレッツェル<br>いちご",
-  image: ["images/IMG_0526.JPG"]
-},
+    number: 9,
+    name: "たこ焼き",
+    section: "模擬店",
+    price: "200円",
+    description: "",
+    image: ["images/IMG_0525.JPG"]
+  },
   {
-  number:9,
-  name: "たこ焼き",
-  section: "模擬店",
-  price: "200円",
-  description:"",
-  image: ["images/IMG_0525.JPG"]
-},
-{
-  name: "きゅうり",
-  section: "飲食係",
-  category: "農産物",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "トマト",
-  section: "飲食係",
-  category: "農産物",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "ミニトマト",
-  section: "飲食係",
-  category: "農産物",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "ピーマン",
-  section: "飲食係",
-  category: "農産物",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "南瓜",
-  section: "飲食係",
-  category: "農産物",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "ズッキーニ",
-  section: "飲食係",
-  category: "農産物",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "アスパラガス",
-  section: "飲食係",
-  category: "農産物",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "新玉ねぎ",
-  section: "飲食係",
-  category: "農産物",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "じゃがいも",
-  section: "飲食係",
-  category: "農産物",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "さつまいも",
-  section: "飲食係",
-  category: "農産物",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "ブルーベリー",
-  section: "飲食係",
-  category: "農産物",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "桃",
-  section: "飲食係",
-  category: "農産物",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "ラスク",
-  section: "飲食係",
-  category: "加工品",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "バウムクーヘン",
-  section: "飲食係",
-  category: "加工品",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "米農家が作る　米粉シフォンケーキ",
-  section: "飲食係",
-  category: "加工品",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "米農家が作る　米粉マフィン",
-  section: "飲食係",
-  category: "加工品",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "郡山名物　クリームボックス",
-  section: "飲食係",
-  category: "加工品",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "生ラーメン",
-  section: "飲食係",
-  category: "加工品",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "福島果物たくさんのフルーツサンド",
-  section: "飲食係",
-  category: "加工品",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "地元の牧場のアイスキャンディー",
-  section: "飲食係",
-  category: "加工品",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "地元の名物　玄米パン",
-  section: "飲食係",
-  category: "加工品",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "焼きそば",
-  section: "飲食係",
-  category: "軽食",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "手作りキャベツメンチ",
-  section: "飲食係",
-  category: "軽食",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "手作り餃子メンチ",
-  section: "飲食係",
-  category: "軽食",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "ザンギ",
-  section: "飲食係",
-  category: "軽食",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "チュロス",
-  section: "飲食係",
-  category: "軽食",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "バタフライピーレモネードスカッシュ",
-  section: "飲食係",
-  category: "軽食",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "ハイビスカスレモネードスカッシュ",
-  section: "飲食係",
-  category: "軽食",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "調理パン",
-  section: "飲食係",
-  category: "軽食",
-  price: "0",
-  description: "",
-  image: ["images/no-images.png"]
-},
-{
-  name: "いろいろ",
-  section: "地域応援",
-  price: "300円",
-  description:"",
-  image: [""]
-}
+    name: "きゅうり",
+    section: "飲食係",
+    category: "農産物",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "トマト",
+    section: "飲食係",
+    category: "農産物",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "ミニトマト",
+    section: "飲食係",
+    category: "農産物",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "ピーマン",
+    section: "飲食係",
+    category: "農産物",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "南瓜",
+    section: "飲食係",
+    category: "農産物",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "ズッキーニ",
+    section: "飲食係",
+    category: "農産物",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "アスパラガス",
+    section: "飲食係",
+    category: "農産物",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "新玉ねぎ",
+    section: "飲食係",
+    category: "農産物",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "じゃがいも",
+    section: "飲食係",
+    category: "農産物",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "さつまいも",
+    section: "飲食係",
+    category: "農産物",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "ブルーベリー",
+    section: "飲食係",
+    category: "農産物",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "桃",
+    section: "飲食係",
+    category: "農産物",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "ラスク",
+    section: "飲食係",
+    category: "加工品",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "バウムクーヘン",
+    section: "飲食係",
+    category: "加工品",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "米農家が作る　米粉シフォンケーキ",
+    section: "飲食係",
+    category: "加工品",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "米農家が作る　米粉マフィン",
+    section: "飲食係",
+    category: "加工品",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "郡山名物　クリームボックス",
+    section: "飲食係",
+    category: "加工品",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "生ラーメン",
+    section: "飲食係",
+    category: "加工品",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "福島果物たくさんのフルーツサンド",
+    section: "飲食係",
+    category: "加工品",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "地元の牧場のアイスキャンディー",
+    section: "飲食係",
+    category: "加工品",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "地元の名物　玄米パン",
+    section: "飲食係",
+    category: "加工品",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "焼きそば",
+    section: "飲食係",
+    category: "軽食",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "手作りキャベツメンチ",
+    section: "飲食係",
+    category: "軽食",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "手作り餃子メンチ",
+    section: "飲食係",
+    category: "軽食",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "ザンギ",
+    section: "飲食係",
+    category: "軽食",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "チュロス",
+    section: "飲食係",
+    category: "軽食",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "バタフライピーレモネードスカッシュ",
+    section: "飲食係",
+    category: "軽食",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "ハイビスカスレモネードスカッシュ",
+    section: "飲食係",
+    category: "軽食",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "調理パン",
+    section: "飲食係",
+    category: "軽食",
+    price: "0",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "いろいろ",
+    section: "地域応援",
+    price: "300円",
+    description: "",
+    image: [""]
+  }
 ];
 
 // =========================
@@ -360,11 +359,11 @@ const subtabButtons =
 let statusData = {};
 
 const API_URL =
-"https://script.google.com/macros/s/AKfycbyr9GAES93Rw8YTLaOs-sVSrkaugyt5UY48ziiHNms8modz9eAfFmJhsgmQAcr52aUZ-g/exec";
+  "https://script.google.com/macros/s/AKfycbyr9GAES93Rw8YTLaOs-sVSrkaugyt5UY48ziiHNms8modz9eAfFmJhsgmQAcr52aUZ-g/exec";
 
-async function loadStatus(){
+async function loadStatus() {
 
-  try{
+  try {
 
     const response =
       await fetch(API_URL);
@@ -375,11 +374,11 @@ async function loadStatus(){
     const now = new Date();
 
     document.getElementById(
-      "last-update"
-    ).textContent =
+        "last-update"
+      ).textContent =
       `最終更新：${now.getHours().toString().padStart(2,"0")}:${now.getMinutes().toString().padStart(2,"0")}`;
 
-  }catch(error){
+  } catch (error) {
 
     console.error(error);
 
@@ -516,7 +515,7 @@ document.addEventListener(
 // 初期表示
 // =========================
 
-async function init(){
+async function init() {
 
   // 先に表示
   renderNumberView();
@@ -530,7 +529,7 @@ async function init(){
 }
 init();
 
-setInterval(async ()=>{
+setInterval(async () => {
 
   await loadStatus();
 
@@ -539,19 +538,19 @@ setInterval(async ()=>{
       ".tab-button.active"
     ).dataset.tab;
 
-  if(activeTab === "number"){
+  if (activeTab === "number") {
     renderNumberView();
   }
 
-  if(activeTab === "category"){
+  if (activeTab === "category") {
     renderCategoryView();
   }
 
-  if(activeTab === "place"){
+  if (activeTab === "place") {
     renderPlaceView();
   }
 
-},900000);
+}, 900000);
 
 // =========================
 // タブ切り替え
@@ -602,9 +601,9 @@ tabButtons.forEach(button => {
 // =========================
 // 模擬店
 // =========================
-function getStatusClass(status){
+function getStatusClass(status) {
 
-  switch(status){
+  switch (status) {
 
     case "empty":
       return "status-empty";
@@ -624,9 +623,10 @@ function getStatusClass(status){
   }
 
 }
-function getStatusLabel(status){
 
-  switch(status){
+function getStatusLabel(status) {
+
+  switch (status) {
 
     case "empty":
       return "🟢 空いてます";
@@ -646,6 +646,7 @@ function getStatusLabel(status){
   }
 
 }
+
 function renderNumberView() {
 
   createProjectList(
@@ -665,14 +666,15 @@ function renderCategoryView() {
   renderFoodCategory("農産物");
 
 }
-function renderFoodCategory(category){
+
+function renderFoodCategory(category) {
 
   createProjectList(
 
     products.filter(
       p =>
-        p.section === "飲食係" &&
-        p.category === category
+      p.section === "飲食係" &&
+      p.category === category
     )
 
   );
@@ -712,6 +714,7 @@ subtabButtons.forEach(button => {
   );
 
 });
+
 function createProjectList(data) {
 
   contentArea.innerHTML = "";
@@ -740,19 +743,31 @@ function createProjectList(data) {
             ${product.name}
           </div>
 
-          ${product.section === "模擬店" ? `
-          <div class="project-congestion ${getStatusClass(status)}">
-          ${getStatusLabel(status)}
-          </div>
-          ` : ""}
+         <div class="product-bottom">
 
-          <div class="product-price">
-            ${product.price}
-          </div>
+  <div class="product-detail">
 
-          <div class="product-description">
-            ${product.description || ""}
-          </div>
+    <div class="product-price">
+      ${product.price}
+    </div>
+
+    <div class="product-description">
+      ${product.description || ""}
+    </div>
+
+  </div>
+
+  ${
+    product.section === "模擬店"
+    ? `
+      <div class="project-congestion ${getStatusClass(status)}">
+        ${getStatusLabel(status)}
+      </div>
+    `
+    : ""
+  }
+
+</div>
 
         </div>
 
@@ -766,7 +781,7 @@ function createProjectList(data) {
 
 }
 
-  
+
 // =========================
 // モーダルを閉じる
 // =========================
