@@ -219,7 +219,7 @@ const products = [{
     image: ["images/no-images.png"]
   },
   {
-    name: "福島果物<br>たくさんのフルーツサンド",
+    name: "福島果物たくさんの<br>フルーツサンド",
     section: "飲食係",
     category: "加工品",
     price: "0",
