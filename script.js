@@ -518,12 +518,16 @@ document.addEventListener(
 
 async function init(){
 
+  // 先に表示
+  renderNumberView();
+
+  // あとで混雑状況取得
   await loadStatus();
 
+  // 取得後に再描画
   renderNumberView();
 
 }
-
 init();
 
 setInterval(async ()=>{
