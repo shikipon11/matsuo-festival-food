@@ -536,7 +536,7 @@ h1 {
   display:flex;
   justify-content:space-between;
   align-items:center;
-  margin-top:8px;
+  margin-top:4px;
   gap:6px;
 }
 
