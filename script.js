@@ -187,7 +187,7 @@ const products = [{
     image: ["images/no-images.png"]
   },
   {
-    name: "米農家が作る　米粉シフォンケーキ",
+    name: "米農家が作る<br>米粉シフォンケーキ",
     section: "飲食係",
     category: "加工品",
     price: "0",
@@ -195,7 +195,7 @@ const products = [{
     image: ["images/no-images.png"]
   },
   {
-    name: "米農家が作る　米粉マフィン",
+    name: "米農家が作る<br>米粉マフィン",
     section: "飲食係",
     category: "加工品",
     price: "0",
@@ -203,7 +203,7 @@ const products = [{
     image: ["images/no-images.png"]
   },
   {
-    name: "郡山名物　クリームボックス",
+    name: "郡山名物<br>クリームボックス",
     section: "飲食係",
     category: "加工品",
     price: "0",
@@ -219,7 +219,7 @@ const products = [{
     image: ["images/no-images.png"]
   },
   {
-    name: "福島果物たくさんのフルーツサンド",
+    name: "福島果物<br>たくさんのフルーツサンド",
     section: "飲食係",
     category: "加工品",
     price: "0",
@@ -227,7 +227,7 @@ const products = [{
     image: ["images/no-images.png"]
   },
   {
-    name: "地元の牧場のアイスキャンディー",
+    name: "地元の牧場の<br>アイスキャンディー",
     section: "飲食係",
     category: "加工品",
     price: "0",
@@ -235,7 +235,7 @@ const products = [{
     image: ["images/no-images.png"]
   },
   {
-    name: "地元の名物　玄米パン",
+    name: "地元の名物<br>玄米パン",
     section: "飲食係",
     category: "加工品",
     price: "0",
@@ -283,7 +283,7 @@ const products = [{
     image: ["images/no-images.png"]
   },
   {
-    name: "バタフライピーレモネードスカッシュ",
+    name: "バタフライピー<br>レモネードスカッシュ",
     section: "飲食係",
     category: "軽食",
     price: "0",
@@ -291,7 +291,7 @@ const products = [{
     image: ["images/no-images.png"]
   },
   {
-    name: "ハイビスカスレモネードスカッシュ",
+    name: "ハイビスカス<br>レモネードスカッシュ",
     section: "飲食係",
     category: "軽食",
     price: "0",
