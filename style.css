@@ -411,7 +411,7 @@ h1 {
 .product-name,
 .product-price,
 .product-description {
-  margin: 0;
+  margin: 4px;
   padding: 0;
   line-height: 1;
 }
