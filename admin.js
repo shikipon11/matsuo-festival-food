@@ -1,3 +1,41 @@
+const products = [
+  {
+    number: 1,
+    title: "ワッフル"
+  },
+  {
+    number: 2,
+    title: "チョコバナナ"
+  },
+  {
+    number: 3,
+    title: "タピオカ"
+  },
+  {
+    number: 4,
+    title: "ポップコーン"
+  },
+  {
+    number: 5,
+    title: "フランクフルト"
+  },
+  {
+    number: 6,
+    title: "焼き鳥"
+  },
+  {
+    number: 7,
+    title: "レモネード"
+  },
+  {
+    number: 8,
+    title: "クレープ"
+  },
+  {
+    number: 9,
+    title: "たこ焼き"
+  }
+];
 const API_URL =
 "https://script.google.com/macros/s/AKfycbxxqs7nc0gnhbGMkelwQKpM9R9CcOKEI5r75PpMz3S4XX1Ve6ONLD_FHet4-zUUbqsS/exec";
 let isUpdating = false;
