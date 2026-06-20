@@ -704,7 +704,7 @@ function renderCategoryView() {
 
   contentArea.innerHTML = `
 
-    <div class="project-congestion ${getStatusClass(foodStatus)}">
+    <div class="class="food-status-box project-congestion ${getStatusClass(foodStatus)}">
       ${getStatusLabel(foodStatus)}
     </div>
 
