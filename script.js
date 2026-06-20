@@ -360,7 +360,7 @@ let statusData = {};
 
 const API_URL =
   "https://script.google.com/macros/s/AKfycbyr9GAES93Rw8YTLaOs-sVSrkaugyt5UY48ziiHNms8modz9eAfFmJhsgmQAcr52aUZ-g/exec";
-FOOD_API_URL =
+const FOOD_API_URL =
   "https://script.google.com/macros/s/AKfycbziTPEatkxrpqHk9o1zBxAmnxqAwTp54XiEFLHWueSwBRwcfpfchMUPAnmmtTyptTqE/exec";
 
 async function loadStatus() {
@@ -398,7 +398,7 @@ let foodStatus = "";
     const data =
       await response.json();
 
-    foodStatus = data.status;
+    foodStatus = data.food;
 
   } catch(error) {
 
