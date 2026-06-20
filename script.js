@@ -361,7 +361,7 @@ let statusData = {};
 const API_URL =
   "https://script.google.com/macros/s/AKfycbyr9GAES93Rw8YTLaOs-sVSrkaugyt5UY48ziiHNms8modz9eAfFmJhsgmQAcr52aUZ-g/exec";
 const FOOD_API_URL =
-  "https://script.google.com/macros/s/AKfycbziTPEatkxrpqHk9o1zBxAmnxqAwTp54XiEFLHWueSwBRwcfpfchMUPAnmmtTyptTqE/exec";
+  "https://script.google.com/macros/s/AKfycbwrfHydynR6HW-HcMEBPjzG0ZfxxFBe6iKT_KCI4hl2Fw940tlc9aWAvwJJcCetUDGa/exec";
 
 async function loadStatus() {
 
