@@ -428,7 +428,7 @@ h1 {
   margin:15px 0;
   flex-wrap:wrap;
   justify-content:center;
-  font-color:black;
+  color:black;
 }
 
 .hidden{
@@ -449,7 +449,7 @@ h1 {
   box-shadow:0 4px 10px rgba(0,0,0,.12);
 
   cursor:pointer;
-
+  color:black;
   transition:
     transform .15s,
     box-shadow .15s;
