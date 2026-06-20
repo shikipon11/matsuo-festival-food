@@ -1103,10 +1103,6 @@ h1 {
   .product-container{
     grid-template-columns:120px 1fr;
   }
-
-  .hidden{
-  display:none;
-  }
   
   .product-image img{
     width:120px;
@@ -1117,7 +1113,10 @@ h1 {
     flex-wrap:nowrap;
     gap:6px;
   }
-
+   .hidden{
+  display:none;
+  }
+  
   .subtab-button{
     flex:1;
     min-width:0;
