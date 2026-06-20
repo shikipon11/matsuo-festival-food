@@ -398,8 +398,7 @@ let foodStatus = "";
     const data =
       await response.json();
 
-    foodStatus =
-      data.food;
+    foodStatus = data.status;
 
   } catch(error) {
 
@@ -704,7 +703,7 @@ function renderCategoryView() {
 
   contentArea.innerHTML = `
 
-    <div class="class="food-status-box project-congestion ${getStatusClass(foodStatus)}">
+    <div class="food-status-box project-congestion ${getStatusClass(foodStatus)}">
       ${getStatusLabel(foodStatus)}
     </div>
 
