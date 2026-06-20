@@ -428,7 +428,7 @@ h1 {
   margin:15px 0;
   flex-wrap:wrap;
   justify-content:center;
-  color:brack;
+  color:black;
 }
 
 .hidden{
@@ -1104,6 +1104,10 @@ h1 {
     grid-template-columns:120px 1fr;
   }
 
+  .hidden{
+  display:none;
+  }
+  
   .product-image img{
     width:120px;
     height:120px;
