@@ -472,6 +472,14 @@ h1 {
   background:#cc4125;
   color:white;
 }
+.food-status-box {
+  margin: 16px;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
 /* ========================= */
 /* カード */
 /* ========================= */
