@@ -428,7 +428,7 @@ h1 {
   margin:15px 0;
   flex-wrap:wrap;
   justify-content:center;
-  color:black;
+  font-color:black;
 }
 
 .hidden{
