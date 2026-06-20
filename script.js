@@ -541,17 +541,29 @@ document.addEventListener(
 
 async function init() {
 
-  // 先に表示
   renderNumberView();
 
-  // あとで混雑状況取得
   await Promise.all([
-  loadStatus(),
-  loadFoodStatus()
-]);
+    loadStatus(),
+    loadFoodStatus()
+  ]);
 
-  // 取得後に再描画
-  renderNumberView();
+  const activeTab =
+    document.querySelector(
+      ".tab-button.active"
+    ).dataset.tab;
+
+  if (activeTab === "number") {
+    renderNumberView();
+  }
+
+  if (activeTab === "category") {
+    renderCategoryView();
+  }
+
+  if (activeTab === "place") {
+    renderPlaceView();
+  }
 
 }
 init();
