@@ -716,7 +716,7 @@ function renderCategoryView() {
 function renderFoodCategory(category) {
 
   const statusHtml = `
-    <div class="project-congestion ${getStatusClass(foodStatus)}">
+    <div class="food-status-box project-congestion ${getStatusClass(foodStatus)}">
       ${getStatusLabel(foodStatus)}
     </div>
   `;
