@@ -677,7 +677,7 @@ function getStatusLabel(status) {
       return "🔴 大変混雑";
 
     case "limit":
-      return "⚫ 売り切れ";
+      return "⚫ 休止中";
 
     default:
       return "⚪ 読み込み中";
