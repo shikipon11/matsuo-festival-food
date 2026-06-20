@@ -696,7 +696,7 @@ function renderNumberView() {
 
 }
 // =========================
-// 飲食係
+// 松尾祭地域応援
 // =========================
 function renderCategoryView() {
 
@@ -735,7 +735,7 @@ function renderFoodCategory(category) {
 }
 
 // =========================
-// 松尾祭地域応援　
+// 飲食
 // =========================
 function renderPlaceView() {
 
