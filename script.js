@@ -1,5 +1,6 @@
 // =========================
 // script.js　企画一覧を使いまわした形なのでタグや関数の名前が変だったり使わないコードをけしてなかったりするところに注意
+//地域応援と飲食のコードと表示が逆になっている
 // =========================
 
 const products = [{
@@ -309,6 +310,7 @@ const products = [{
   {
     name: "いろいろ",
     section: "地域応援",
+    category: "玉喜屋",
     price: "300円",
     description: "",
     image: [""]
@@ -355,6 +357,13 @@ const foodSubtabs =
 
 const subtabButtons =
   document.querySelectorAll(".subtab-button");
+const supportSubtabs =
+  document.getElementById("support-subtabs");
+
+const supportSubtabButtons =
+  document.querySelectorAll(
+    ".support-subtab-button"
+  );
 
 let statusData = {};
 
