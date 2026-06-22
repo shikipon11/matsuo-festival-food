@@ -423,8 +423,8 @@ h1 {
 .product-image img {
   width: 180px;
   height: 180px;
-  object-fit: cover;
-  border-radius: 10px;
+  object-fit: contain;
+  background: #fff; /* 余白の見た目用 */
 }
 .subtabs{
   display:flex;
