@@ -494,9 +494,7 @@ const supportSubtabs =
   document.getElementById("support-subtabs");
 
 const supportSubtabButtons =
-  document.querySelectorAll(
-    "#.support-subtab-button .subtab-button"
-  );
+  document.querySelectorAll("#support-subtab-button .subtab-button");
 
 let statusData = {};
 
