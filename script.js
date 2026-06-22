@@ -308,13 +308,146 @@ const products = [{
     image: ["images/no-images.png"]
   },
   {
-    name: "いろいろ",
+    name: "あんこ",
     section: "地域応援",
     category: "玉喜屋",
-    price: "300円",
+    price: "170円",
     description: "",
     image: [""]
-  }
+  },
+  {
+    name: "特製くるみだれ",
+    section: "地域応援",
+    category: "玉喜屋",
+    price: "170円",
+    description: "",
+    image: [""]
+  },
+  {
+    name: "みたらし",
+    section: "地域応援",
+    category: "玉喜屋",
+    price: "170円",
+    description: "",
+    image: [""]
+  },
+  
+　{
+    name: "ツナコーンポテト",
+    section: "地域応援",
+    category: "ダーチャ",
+    price: "200円",
+    description: "",
+    image: [""]
+  },  
+　{
+    name: "テリヤキチキン",
+    section: "地域応援",
+    category: "ダーチャ",
+    price: "200円",
+    description: "",
+    image: [""]
+ },  
+　{
+    name: "ベーコンチーズ",
+    section: "地域応援",
+    category: "ダーチャ",
+    price: "200円",
+    description: "",
+    image: [""]
+  },  
+　{
+    name: "カレーパン",
+    section: "地域応援",
+    category: "ダーチャ",
+    price: "200円",
+    description: "",
+    image: [""]
+ },  
+　{
+    name: "メロンパン",
+    section: "地域応援",
+    category: "ダーチャ",
+    price: "150円",
+    description: "",
+    image: [""]
+  },  
+　{
+    name: "つぶしあん",
+    section: "地域応援",
+    category: "ダーチャ",
+    price: "150円",
+    description: "",
+    image: [""]
+ }, 
+　{
+    name: "たまごサラダパン",
+    section: "地域応援",
+    category: "ダーチャ",
+    price: "200円",
+    description: "",
+    image: [""]
+  },  
+  {
+    name: "クーリッシュバニラ",
+    section: "地域応援",
+    category: "協和食品",
+    price: "150円",
+    description: "",
+    image: [""]
+  },                  
+　{
+    name: "クーリッシュマスカット",
+    section: "地域応援",
+    category: "協和食品",
+    price: "150円",
+    description: "",
+    image: [""]
+  },                  
+　{
+    name: "ガリガリ君ソーダ",
+    section: "地域応援",
+    category: "協和食品",
+    price: "100円",
+    description: "",
+    image: [""]
+  },                  
+　{
+    name: "パルムチョコレートバー",
+    section: "地域応援",
+    category: "協和食品",
+    price: "150円",
+    description: "",
+    image: [""]
+  },                  
+　{
+    name: "チョコモナカジャンボ",
+    section: "地域応援",
+    category: "協和食品",
+    price: "150円",
+    description: "",
+    image: [""]
+  },                  
+　{
+    name: "アイスの実（ぶどう）スマイルプラス",
+    section: "地域応援",
+    category: "協和食品",
+    price: "100円",
+    description: "",
+    image: [""]
+  },                  
+　{
+    name: "BIGスイカバー",
+    section: "地域応援",
+    category: "協和食品",
+    price: "100円",
+    description: "",
+    image: [""]
+  },
+
+
+
+                
 ];
 
 // =========================
@@ -362,7 +495,7 @@ const supportSubtabs =
 
 const supportSubtabButtons =
   document.querySelectorAll(
-    ".support-subtab-button"
+    "#.support-subtab-button .subtab-button"
   );
 
 let statusData = {};
@@ -620,6 +753,7 @@ tabButtons.forEach(button => {
       if (tab === "number") {
 
         foodSubtabs.classList.add("hidden");
+        supportSubtabs.classList.add("hidden");
 
         renderNumberView();
 
@@ -628,6 +762,7 @@ tabButtons.forEach(button => {
       if (tab === "category") {
 
         foodSubtabs.classList.remove("hidden");
+        supportSubtabs.classList.add("hidden");
 
         renderCategoryView();
 
@@ -636,6 +771,8 @@ tabButtons.forEach(button => {
       if (tab === "place") {
 
         foodSubtabs.classList.add("hidden");
+
+        supportSubtabs.classList.remove("hidden");
 
         renderPlaceView();
 
@@ -747,11 +884,11 @@ function renderFoodCategory(category) {
 // =========================
 function renderPlaceView() {
 
-  createProjectList(
-    products.filter(
-      p => p.section === "地域応援"
-    )
+  supportSubtabs.classList.remove(
+    "hidden"
   );
+
+  renderSupportCategory("玉喜屋");
 
 }
 //仮
@@ -775,6 +912,47 @@ subtabButtons.forEach(button => {
   );
 
 });
+function renderSupportCategory(category) {
+
+  contentArea.innerHTML = "";
+
+  createProjectList(
+    products.filter(
+      p =>
+      p.section === "地域応援" &&
+      p.category === category
+    )
+  );
+
+}
+supportSubtabButtons.forEach(
+  button => {
+
+    button.addEventListener(
+      "click",
+      () => {
+
+        supportSubtabButtons.forEach(
+          btn => {
+            btn.classList.remove(
+              "active"
+            );
+          }
+        );
+
+        button.classList.add(
+          "active"
+        );
+
+        renderSupportCategory(
+          button.dataset.category
+        );
+
+      }
+    );
+
+  }
+);
 
 function createProjectList(
   data,
