@@ -488,7 +488,7 @@ const foodSubtabs =
   document.getElementById("food-subtabs");
 
 const subtabButtons =
-  document.querySelectorAll("#food-subtabs.subtab-button");
+  document.querySelectorAll(".subtab-button");
 const supportSubtabs =
   document.getElementById("support-subtabs");
 const supportSubtabButtons =
