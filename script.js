@@ -1,6 +1,5 @@
 // =========================
 // script.js　企画一覧を使いまわした形なのでタグや関数の名前が変だったり使わないコードをけしてなかったりするところに注意
-//地域応援と飲食のコードと表示が逆になっている
 // =========================
 
 const products = [{
@@ -77,7 +76,7 @@ const products = [{
   },
   {
     name: "きゅうり",
-    section: "飲食係",
+    section: "地域応援",
     category: "農産物",
     price: "0",
     description: "",
@@ -85,7 +84,7 @@ const products = [{
   },
   {
     name: "トマト",
-    section: "飲食係",
+    section: "地域応援",
     category: "農産物",
     price: "0",
     description: "",
@@ -93,7 +92,7 @@ const products = [{
   },
   {
     name: "ミニトマト",
-    section: "飲食係",
+    section: "地域応援",
     category: "農産物",
     price: "0",
     description: "",
@@ -101,7 +100,7 @@ const products = [{
   },
   {
     name: "ピーマン",
-    section: "飲食係",
+    section: "地域応援",
     category: "農産物",
     price: "0",
     description: "",
@@ -109,7 +108,7 @@ const products = [{
   },
   {
     name: "南瓜",
-    section: "飲食係",
+    section: "地域応援",
     category: "農産物",
     price: "0",
     description: "",
@@ -117,7 +116,7 @@ const products = [{
   },
   {
     name: "ズッキーニ",
-    section: "飲食係",
+    section: "地域応援",
     category: "農産物",
     price: "0",
     description: "",
@@ -125,7 +124,7 @@ const products = [{
   },
   {
     name: "アスパラガス",
-    section: "飲食係",
+    section: "地域応援",
     category: "農産物",
     price: "0",
     description: "",
@@ -133,7 +132,7 @@ const products = [{
   },
   {
     name: "新玉ねぎ",
-    section: "飲食係",
+    section: "地域応援",
     category: "農産物",
     price: "0",
     description: "",
@@ -141,7 +140,7 @@ const products = [{
   },
   {
     name: "じゃがいも",
-    section: "飲食係",
+    section: "地域応援",
     category: "農産物",
     price: "0",
     description: "",
@@ -149,7 +148,7 @@ const products = [{
   },
   {
     name: "さつまいも",
-    section: "飲食係",
+    section: "地域応援",
     category: "農産物",
     price: "0",
     description: "",
@@ -157,7 +156,7 @@ const products = [{
   },
   {
     name: "ブルーベリー",
-    section: "飲食係",
+    section: "地域応援",
     category: "農産物",
     price: "0",
     description: "",
@@ -165,7 +164,7 @@ const products = [{
   },
   {
     name: "桃",
-    section: "飲食係",
+    section: "地域応援",
     category: "農産物",
     price: "0",
     description: "",
@@ -173,7 +172,7 @@ const products = [{
   },
   {
     name: "ラスク",
-    section: "飲食係",
+    section: "地域応援",
     category: "加工品",
     price: "0",
     description: "",
@@ -181,7 +180,7 @@ const products = [{
   },
   {
     name: "バウムクーヘン",
-    section: "飲食係",
+    section: "地域応援",
     category: "加工品",
     price: "0",
     description: "",
@@ -189,7 +188,7 @@ const products = [{
   },
   {
     name: "米農家が作る<br>米粉シフォンケーキ",
-    section: "飲食係",
+    section: "地域応援",
     category: "加工品",
     price: "0",
     description: "",
@@ -197,7 +196,7 @@ const products = [{
   },
   {
     name: "米農家が作る<br>米粉マフィン",
-    section: "飲食係",
+    section: "地域応援",
     category: "加工品",
     price: "0",
     description: "",
@@ -205,7 +204,7 @@ const products = [{
   },
   {
     name: "郡山名物<br>クリームボックス",
-    section: "飲食係",
+    section: "地域応援",
     category: "加工品",
     price: "0",
     description: "",
@@ -213,7 +212,7 @@ const products = [{
   },
   {
     name: "生ラーメン",
-    section: "飲食係",
+    section: "地域応援",
     category: "加工品",
     price: "0",
     description: "",
@@ -221,7 +220,7 @@ const products = [{
   },
   {
     name: "福島果物たくさんの<br>フルーツサンド",
-    section: "飲食係",
+    section: "地域応援",
     category: "加工品",
     price: "0",
     description: "",
@@ -229,7 +228,7 @@ const products = [{
   },
   {
     name: "地元の牧場の<br>アイスキャンディー",
-    section: "飲食係",
+    section: "地域応援",
     category: "加工品",
     price: "0",
     description: "",
@@ -237,7 +236,7 @@ const products = [{
   },
   {
     name: "地元の名物<br>玄米パン",
-    section: "飲食係",
+    section: "地域応援",
     category: "加工品",
     price: "0",
     description: "",
@@ -245,7 +244,7 @@ const products = [{
   },
   {
     name: "焼きそば",
-    section: "飲食係",
+    section: "地域応援",
     category: "軽食",
     price: "0",
     description: "",
@@ -253,7 +252,7 @@ const products = [{
   },
   {
     name: "手作りキャベツメンチ",
-    section: "飲食係",
+    section: "地域応援",
     category: "軽食",
     price: "0",
     description: "",
@@ -261,7 +260,7 @@ const products = [{
   },
   {
     name: "手作り餃子メンチ",
-    section: "飲食係",
+    section: "地域応援",
     category: "軽食",
     price: "0",
     description: "",
@@ -269,7 +268,7 @@ const products = [{
   },
   {
     name: "ザンギ",
-    section: "飲食係",
+    section: "地域応援",
     category: "軽食",
     price: "0",
     description: "",
@@ -277,7 +276,7 @@ const products = [{
   },
   {
     name: "チュロス",
-    section: "飲食係",
+    section: "地域応援",
     category: "軽食",
     price: "0",
     description: "",
@@ -285,7 +284,7 @@ const products = [{
   },
   {
     name: "バタフライピー<br>レモネードスカッシュ",
-    section: "飲食係",
+    section: "地域応援",
     category: "軽食",
     price: "0",
     description: "",
@@ -293,7 +292,7 @@ const products = [{
   },
   {
     name: "ハイビスカス<br>レモネードスカッシュ",
-    section: "飲食係",
+    section: "地域応援",
     category: "軽食",
     price: "0",
     description: "",
@@ -301,7 +300,7 @@ const products = [{
   },
   {
     name: "調理パン",
-    section: "飲食係",
+    section: "地域応援",
     category: "軽食",
     price: "0",
     description: "",
@@ -309,7 +308,7 @@ const products = [{
   },
   {
     name: "あんこ",
-    section: "地域応援",
+    section: "飲食係",
     category: "玉喜屋",
     price: "170円",
     description: "",
@@ -317,7 +316,7 @@ const products = [{
   },
   {
     name: "特製くるみだれ",
-    section: "地域応援",
+    section: "飲食係",
     category: "玉喜屋",
     price: "170円",
     description: "",
@@ -325,7 +324,7 @@ const products = [{
   },
   {
     name: "みたらし",
-    section: "地域応援",
+    section: "飲食係",
     category: "玉喜屋",
     price: "170円",
     description: "",
@@ -334,7 +333,7 @@ const products = [{
   
 　{
     name: "ツナコーンポテト",
-    section: "地域応援",
+    section: "飲食係",
     category: "ダーチャ",
     price: "200円",
     description: "",
@@ -342,7 +341,7 @@ const products = [{
   },  
 　{
     name: "テリヤキチキン",
-    section: "地域応援",
+    section: "飲食係",
     category: "ダーチャ",
     price: "200円",
     description: "",
@@ -350,7 +349,7 @@ const products = [{
  },  
 　{
     name: "ベーコンチーズ",
-    section: "地域応援",
+    section: "飲食係",
     category: "ダーチャ",
     price: "200円",
     description: "",
@@ -358,7 +357,7 @@ const products = [{
   },  
 　{
     name: "カレーパン",
-    section: "地域応援",
+    section: "飲食係",
     category: "ダーチャ",
     price: "200円",
     description: "",
@@ -366,7 +365,7 @@ const products = [{
  },  
 　{
     name: "メロンパン",
-    section: "地域応援",
+    section: "飲食係",
     category: "ダーチャ",
     price: "150円",
     description: "",
@@ -374,7 +373,7 @@ const products = [{
   },  
 　{
     name: "つぶしあん",
-    section: "地域応援",
+    section: "飲食係",
     category: "ダーチャ",
     price: "150円",
     description: "",
@@ -382,7 +381,7 @@ const products = [{
  }, 
 　{
     name: "たまごサラダパン",
-    section: "地域応援",
+    section: "飲食係",
     category: "ダーチャ",
     price: "200円",
     description: "",
@@ -390,7 +389,7 @@ const products = [{
   },  
   {
     name: "クーリッシュバニラ",
-    section: "地域応援",
+    section: "飲食係",
     category: "協和食品",
     price: "150円",
     description: "",
@@ -398,7 +397,7 @@ const products = [{
   },                  
 　{
     name: "クーリッシュマスカット",
-    section: "地域応援",
+    section: "飲食係",
     category: "協和食品",
     price: "150円",
     description: "",
@@ -406,7 +405,7 @@ const products = [{
   },                  
 　{
     name: "ガリガリ君ソーダ",
-    section: "地域応援",
+    section: "飲食係",
     category: "協和食品",
     price: "100円",
     description: "",
@@ -414,7 +413,7 @@ const products = [{
   },                  
 　{
     name: "パルムチョコレートバー",
-    section: "地域応援",
+    section: "飲食係",
     category: "協和食品",
     price: "150円",
     description: "",
@@ -422,7 +421,7 @@ const products = [{
   },                  
 　{
     name: "チョコモナカジャンボ",
-    section: "地域応援",
+    section: "飲食係",
     category: "協和食品",
     price: "150円",
     description: "",
@@ -430,7 +429,7 @@ const products = [{
   },                  
 　{
     name: "アイスの実（ぶどう）スマイルプラス",
-    section: "地域応援",
+    section: "飲食係",
     category: "協和食品",
     price: "100円",
     description: "",
@@ -438,7 +437,7 @@ const products = [{
   },                  
 　{
     name: "BIGスイカバー",
-    section: "地域応援",
+    section: "飲食係",
     category: "協和食品",
     price: "100円",
     description: "",
@@ -869,7 +868,7 @@ function renderFoodCategory(category) {
   createProjectList(
     products.filter(
       p =>
-      p.section === "飲食係" &&
+      p.section === "地域応援" &&
       p.category === category
     ),
     true
@@ -917,7 +916,7 @@ function renderSupportCategory(category) {
   createProjectList(
     products.filter(
       p =>
-      p.section === "地域応援" &&
+      p.section === "飲食係" &&
       p.category === category
     )
   );
