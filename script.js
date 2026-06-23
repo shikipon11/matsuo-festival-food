@@ -6,7 +6,7 @@ const products = [{
     number: 1,
     name: "ワッフル",
     section: "模擬店",
-    price: "0",
+    price: "200円",
     description: "プレーン<br>チョコソース<br>キャラメルソース<br>いちごソース",
     image: ["images/B8B6702C-AEC4-4301-822E-DB9095A9BEDF.jpeg"]
   },
@@ -31,7 +31,7 @@ const products = [{
     name: "ポップコーン",
     section: "模擬店",
     price: "200円",
-    description: "塩<br>キャラメル<br>夢フル",
+    description: "塩<br>キャラメル<br>チョコレート",
     image: ["images/C2CF8B4C-00ED-4072-8A7E-60A8271EE4ED.jpeg"]
   },
   {
