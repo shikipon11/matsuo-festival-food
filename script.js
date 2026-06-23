@@ -8,7 +8,7 @@ const products = [{
     section: "模擬店",
     price: "200円",
     description: "プレーン<br>チョコソース<br>キャラメルソース<br>いちごソース",
-    image: ["images/B8B6702C-AEC4-4301-822E-DB9095A9BEDF.jpeg"]
+    image: ["images/IMG_0595.JPG"]
   },
   {
     number: 2,
@@ -208,7 +208,7 @@ const products = [{
     category: "加工品",
     price: "0",
     description: "",
-    image: ["images/クリームボックス.JPG"]
+    image: ["images/クリームボックスとカフェオレボックス.JPG"]
   },
   {
     name: "えごま豚水餃子ラーメン",
@@ -224,7 +224,7 @@ const products = [{
     category: "加工品",
     price: "0",
     description: "",
-    image: ["images/フルーツサンド①.JPG"]
+    image: ["images/フルーツサンド①.JPG"]
   },
   {
     name: "地元の牧場の<br>アイスキャンディー",
