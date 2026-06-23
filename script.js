@@ -240,7 +240,7 @@ const products = [{
     category: "加工品",
     price: "0",
     description: "",
-    image: ["images/IMG_0597.PNG"]
+    image: ["images/IMG_0600.PNG"]
   },
   {
     name: "焼きそば",
