@@ -843,6 +843,21 @@ function renderCategoryView() {
 
   foodSubtabs.classList.remove("hidden");
 
+  // activeをリセット
+  subtabButtons.forEach(btn => {
+    btn.classList.remove("active");
+  });
+
+  // 農産物をactiveにする
+  const defaultButton =
+    document.querySelector(
+      '#food-subtabs .subtab-button[data-category="農産物"]'
+    );
+
+  if (defaultButton) {
+    defaultButton.classList.add("active");
+  }
+
   contentArea.innerHTML = `
 
     <div class="food-status-box project-congestion ${getStatusClass(foodStatus)}">
