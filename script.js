@@ -330,8 +330,7 @@ const products = [{
     description: "",
     image: ["images/IMG_0566.JPG"]
   },
-  
-　{
+  {
     name: "ツナコーンポテト",
     section: "飲食係",
     category: "ダーチャ",
