@@ -7,7 +7,7 @@ const products = [{
     name: "ワッフル",
     section: "模擬店",
     price: "0",
-    description: "",
+    description: "プレーン<br>チョコソース<br>キャラメルソース<br>いちごソース",
     image: ["images/B8B6702C-AEC4-4301-822E-DB9095A9BEDF.jpeg"]
   },
   {
@@ -23,7 +23,7 @@ const products = [{
     name: "タピオカ",
     section: "模擬店",
     price: "400円",
-    description: "",
+    description: "ミルクティー<br>抹茶<br>いちごミルク",
     image: ["images/3807A46D-9843-4BFF-93C8-16383E6A4D41.jpeg"]
   },
   {
@@ -46,8 +46,8 @@ const products = [{
     number: 6,
     name: "焼き鳥",
     section: "模擬店",
-    price: "3本 400円<br>10本 1000円",
-    description: "塩,美味だれ",
+    price: "3本 400円<br>10本 1200円",
+    description: "塩,美味だれ<br>3本(もも2ねぎま1)、10本(もも5ねぎま5)",
     image: ["images/ED01DA8A-0670-4E2C-A34A-CAD3635ED83E.jpeg"]
   },
   {
@@ -71,7 +71,7 @@ const products = [{
     name: "たこ焼き",
     section: "模擬店",
     price: "200円",
-    description: "",
+    description: "ソース<br>明太チーズ",
     image: ["images/IMG_0525.JPG"]
   },
   {
