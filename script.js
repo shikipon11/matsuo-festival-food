@@ -31,7 +31,7 @@ const products = [{
     name: "ポップコーン",
     section: "模擬店",
     price: "200円",
-    description: "塩,キャラメル,夢フル",
+    description: "塩<br>キャラメル<br>夢フル",
     image: ["images/C2CF8B4C-00ED-4072-8A7E-60A8271EE4ED.jpeg"]
   },
   {
@@ -47,7 +47,7 @@ const products = [{
     name: "焼き鳥",
     section: "模擬店",
     price: "3本 400円<br>10本 1200円",
-    description: "塩,美味だれ<br>3本(もも2ねぎま1)、10本(もも5ねぎま5)",
+    description: "塩,美味だれ<br>3本(もも2ねぎま1)<br>10本(もも5ねぎま5)",
     image: ["images/ED01DA8A-0670-4E2C-A34A-CAD3635ED83E.jpeg"]
   },
   {
@@ -1006,34 +1006,31 @@ function createProjectList(
 
         <div class="product-info">
 
-        <div class="product-name">
-            ${product.name}
-          </div>
+  <div class="product-name">
+    ${product.name}
+  </div>
 
-         <div class="product-bottom">
-         
-         <div class="product-detail">
- 
-         <div class="product-price">
-         ${product.price}
-         </div>
-         
-         <div class="product-description">
-         ${product.description || ""}
-         </div>
-         
-         </div>
-         ${
-             product.section === "模擬店"? `
+  <div class="product-top-row">
+
+    <div class="product-price">
+      ${product.price}
+    </div>
+
+    ${
+      product.section === "模擬店" ? `
       <div class="project-congestion ${getStatusClass(status)}">
         ${getStatusLabel(status)}
       </div>
-      `: ""
-         }
-         </div>
+      ` : ""
+    }
 
-        </div>
+  </div>
 
+  <div class="product-description">
+    ${product.description || ""}
+  </div>
+
+</div>
       </div>
 
     `;
