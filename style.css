@@ -541,17 +541,11 @@ h1 {
   transform: scale(0.97);
 
 }
-.product-bottom{
+.product-top-row{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  margin-top:4px;
-  gap:6px;
-}
-
-.product-detail{
-  flex:1;
-  margin:4px;
+  gap:8px;
 }
 
 /* ========================= */
