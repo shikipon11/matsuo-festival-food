@@ -880,9 +880,22 @@ function renderFoodCategory(category) {
 // =========================
 function renderPlaceView() {
 
-  supportSubtabs.classList.remove(
-    "hidden"
-  );
+  supportSubtabs.classList.remove("hidden");
+
+  // activeリセット
+  supportSubtabButtons.forEach(btn => {
+    btn.classList.remove("active");
+  });
+
+  // 玉喜屋をactiveにする
+  const defaultButton =
+    document.querySelector(
+      '#support-subtabs .subtab-button[data-category="玉喜屋"]'
+    );
+
+  if (defaultButton) {
+    defaultButton.classList.add("active");
+  }
 
   renderSupportCategory("玉喜屋");
 
