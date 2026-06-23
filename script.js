@@ -195,12 +195,12 @@ const products = [{
     image: ["images/米粉シフォンケーキ.JPG"]
   },
   {
-    name: "米農家が作る<br>米粉マフィン",
+    name: "米農家が作る<br>米粉チーズケーキ",
     section: "地域応援",
     category: "加工品",
     price: "0",
     description: "",
-    image: ["images/米粉チーズケーキ.JPG"]
+    image: ["images/米粉チーズケーキ.JPG"]
   },
   {
     name: "郡山名物<br>クリームボックス",
@@ -216,7 +216,7 @@ const products = [{
     category: "加工品",
     price: "0",
     description: "",
-    image: ["images/IMG_0598.JPG"]
+    image: ["images/IMG_0598.PNG"]
   },
   {
     name: "福島果物たくさんの<br>フルーツサンド",
@@ -232,7 +232,7 @@ const products = [{
     category: "加工品",
     price: "0",
     description: "",
-    image: ["images/アイスキャンディー.JPG"]
+    image: ["images/アイスキャンディー.JPG"]
   },
   {
     name: "地元の名物<br>玄米パン",
@@ -240,7 +240,7 @@ const products = [{
     category: "加工品",
     price: "0",
     description: "",
-    image: ["images/IMG_0600.JPG"]
+    image: ["images/IMG_0597.PNG"]
   },
   {
     name: "焼きそば",
