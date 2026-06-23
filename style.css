@@ -1099,6 +1099,10 @@ h1 {
     font-size: 13px;
 
   }
+  
+  .product-info{
+    gap: 1px;
+  }
 
   .product-container{
     grid-template-columns:120px 1fr;
