@@ -7,7 +7,7 @@ const products = [{
     name: "ワッフル",
     section: "模擬店",
     price: "200円",
-    description: "プレーン<br>チョコソース<br>キャラメルソース<br>いちごソース",
+    description: "プレーン、チョコソース<br>キャラメルソース、いちごソース",
     image: ["images/IMG_0595.JPG"]
   },
   {
@@ -46,7 +46,7 @@ const products = [{
     number: 6,
     name: "焼き鳥",
     section: "模擬店",
-    price: "3本 400円<br>10本 1200円",
+    price: "3本 400円　10本 1200円",
     description: "塩,美味だれ<br>3本(もも2ねぎま1)<br>10本(もも5ねぎま5)",
     image: ["images/ED01DA8A-0670-4E2C-A34A-CAD3635ED83E.jpeg"]
   },
