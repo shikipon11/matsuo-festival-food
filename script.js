@@ -7,7 +7,7 @@ const products = [{
     name: "ワッフル",
     section: "模擬店",
     price: "200円",
-    description: "プレーン、チョコソース<br>キャラメルソース、いちごソース",
+    description: "プレーン、チョコソース<br>キャラメルソース<br>いちごソース",
     image: ["images/IMG_0595.JPG"]
   },
   {
