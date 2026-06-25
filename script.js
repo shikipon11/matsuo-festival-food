@@ -99,6 +99,14 @@ const products = [{
     image: ["images/ミニトマト.JPG"]
   },
   {
+    name: "人参",
+    section: "地域応援",
+    category: "農産物",
+    price: "",
+    description: "",
+    image: ["images/にんじん.JPG"]
+  },
+  {
     name: "ピーマン",
     section: "地域応援",
     category: "農産物",
@@ -169,7 +177,15 @@ const products = [{
     price: "",
     description: "",
     image: ["images/no-images.png"]
-  },
+  },                 
+  {
+    name: "はちみつ",
+    section: "地域応援",
+    category: "加工品",
+    price: "",
+    description: "",
+    image: ["images/はちみつ.JPG"]
+  },                 
   {
     name: "ラスク",
     section: "地域応援",
@@ -211,9 +227,17 @@ const products = [{
     image: ["images/クリームボックスとカフェオレボックス.JPG"]
   },
   {
-    name: "えごま豚水餃子ラーメン",
+    name: "生ラーメン",
     section: "地域応援",
     category: "加工品",
+    price: "",
+    description: "",
+    image: ["images/no-images.png"]
+  },
+  {
+    name: "えごま豚水餃子",
+    section: "地域応援",
+    category: "軽食",
     price: "",
     description: "",
     image: ["images/IMG_0598.PNG"]
