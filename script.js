@@ -62,7 +62,7 @@ const products = [{
     number: 8,
     name: "クレープ",
     section: "模擬店",
-    price: "300円",
+    price: "400円",
     description: "クッキーアンドクリーム<br>キャラメルプレッツェル<br>いちご",
     image: ["images/IMG_0526.JPG"]
   },
