@@ -78,7 +78,7 @@ const products = [{
     name: "きゅうり",
     section: "地域応援",
     category: "農産物",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/きゅうり.JPG"]
   },
@@ -86,7 +86,7 @@ const products = [{
     name: "トマト",
     section: "地域応援",
     category: "農産物",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/トマト②.JPG"]
   },
@@ -94,7 +94,7 @@ const products = [{
     name: "ミニトマト",
     section: "地域応援",
     category: "農産物",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/ミニトマト.JPG"]
   },
@@ -102,7 +102,7 @@ const products = [{
     name: "ピーマン",
     section: "地域応援",
     category: "農産物",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/no-images.png"]
   },
@@ -110,7 +110,7 @@ const products = [{
     name: "南瓜",
     section: "地域応援",
     category: "農産物",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/no-images.png"]
   },
@@ -118,7 +118,7 @@ const products = [{
     name: "ズッキーニ",
     section: "地域応援",
     category: "農産物",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/no-images.png"]
   },
@@ -126,7 +126,7 @@ const products = [{
     name: "アスパラガス",
     section: "地域応援",
     category: "農産物",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/no-images.png"]
   },
@@ -134,7 +134,7 @@ const products = [{
     name: "新玉ねぎ",
     section: "地域応援",
     category: "農産物",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/no-images.png"]
   },
@@ -142,7 +142,7 @@ const products = [{
     name: "じゃがいも",
     section: "地域応援",
     category: "農産物",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/no-images.png"]
   },
@@ -150,7 +150,7 @@ const products = [{
     name: "さつまいも",
     section: "地域応援",
     category: "農産物",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/no-images.png"]
   },
@@ -158,7 +158,7 @@ const products = [{
     name: "ブルーベリー",
     section: "地域応援",
     category: "農産物",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/no-images.png"]
   },
@@ -166,7 +166,7 @@ const products = [{
     name: "桃",
     section: "地域応援",
     category: "農産物",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/no-images.png"]
   },
@@ -174,7 +174,7 @@ const products = [{
     name: "ラスク",
     section: "地域応援",
     category: "加工品",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/ラスク.JPG"]
   },
@@ -182,7 +182,7 @@ const products = [{
     name: "バウムクーヘン",
     section: "地域応援",
     category: "加工品",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/no-images.png"]
   },
@@ -190,7 +190,7 @@ const products = [{
     name: "米農家が作る<br>米粉シフォンケーキ",
     section: "地域応援",
     category: "加工品",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/米粉シフォンケーキ.JPG"]
   },
@@ -198,7 +198,7 @@ const products = [{
     name: "米農家が作る<br>米粉チーズケーキ",
     section: "地域応援",
     category: "加工品",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/米粉チーズケーキ.JPG"]
   },
@@ -206,7 +206,7 @@ const products = [{
     name: "郡山名物<br>クリームボックス",
     section: "地域応援",
     category: "加工品",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/クリームボックスとカフェオレボックス.JPG"]
   },
@@ -214,7 +214,7 @@ const products = [{
     name: "えごま豚水餃子ラーメン",
     section: "地域応援",
     category: "加工品",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/IMG_0598.PNG"]
   },
@@ -222,7 +222,7 @@ const products = [{
     name: "福島果物たくさんの<br>フルーツサンド",
     section: "地域応援",
     category: "加工品",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/フルーツサンド①.JPG"]
   },
@@ -230,7 +230,7 @@ const products = [{
     name: "地元の牧場の<br>アイスキャンディー",
     section: "地域応援",
     category: "加工品",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/アイスキャンディー.JPG"]
   },
@@ -238,7 +238,7 @@ const products = [{
     name: "地元の名物<br>玄米パン",
     section: "地域応援",
     category: "加工品",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/IMG_0600.PNG"]
   },
@@ -246,7 +246,7 @@ const products = [{
     name: "焼きそば",
     section: "地域応援",
     category: "軽食",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/no-images.png"]
   },
@@ -254,7 +254,7 @@ const products = [{
     name: "手作りキャベツメンチ",
     section: "地域応援",
     category: "軽食",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/no-images.png"]
   },
@@ -262,7 +262,7 @@ const products = [{
     name: "手作り餃子メンチ",
     section: "地域応援",
     category: "軽食",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/no-images.png"]
   },
@@ -270,7 +270,7 @@ const products = [{
     name: "ザンギ",
     section: "地域応援",
     category: "軽食",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/no-images.png"]
   },
@@ -278,7 +278,7 @@ const products = [{
     name: "チュロス",
     section: "地域応援",
     category: "軽食",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/no-images.png"]
   },
@@ -286,7 +286,7 @@ const products = [{
     name: "バタフライピー<br>レモネードスカッシュ",
     section: "地域応援",
     category: "軽食",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/no-images.png"]
   },
@@ -294,7 +294,7 @@ const products = [{
     name: "ハイビスカス<br>レモネードスカッシュ",
     section: "地域応援",
     category: "軽食",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/no-images.png"]
   },
@@ -302,7 +302,7 @@ const products = [{
     name: "調理パン",
     section: "地域応援",
     category: "軽食",
-    price: "0",
+    price: "",
     description: "",
     image: ["images/no-images.png"]
   },
