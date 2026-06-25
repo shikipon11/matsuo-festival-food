@@ -498,7 +498,7 @@ let statusData = {};
 const API_URL =
   "https://script.google.com/macros/s/AKfycbyr9GAES93Rw8YTLaOs-sVSrkaugyt5UY48ziiHNms8modz9eAfFmJhsgmQAcr52aUZ-g/exec";
 const FOOD_API_URL =
-  "https://script.google.com/macros/s/AKfycbwrfHydynR6HW-HcMEBPjzG0ZfxxFBe6iKT_KCI4hl2Fw940tlc9aWAvwJJcCetUDGa/exec";
+  "https://script.google.com/macros/s/AKfycbztXzBSMkZiU0wbBNnO_efdR6kqW3emGrNo8H3vOvnkWBaO7QVjKU3pauSBXumYzThP/exec";
 
 async function loadStatus() {
 
@@ -524,6 +524,7 @@ async function loadStatus() {
   }
 }
 let foodStatus = "";
+let drinkStatus = "";
     
     async function loadFoodStatus() {
 
@@ -536,6 +537,7 @@ let foodStatus = "";
       await response.json();
 
     foodStatus = data.food;
+    drinkStatus = data.drink;
 
   } catch(error) {
 
@@ -896,6 +898,12 @@ function renderPlaceView() {
 
   supportSubtabs.classList.remove("hidden");
 
+  contentArea.innerHTML = `
+    <div class="food-status-box project-congestion ${getStatusClass(drinkStatus)}">
+      ${getStatusLabel(drinkStatus)}
+    </div>
+  `;
+
   // activeリセット
   supportSubtabButtons.forEach(btn => {
     btn.classList.remove("active");
@@ -937,14 +945,21 @@ subtabButtons.forEach(button => {
 });
 function renderSupportCategory(category) {
 
-  contentArea.innerHTML = "";
+  const statusHtml = `
+  <div class="food-status-box project-congestion ${getStatusClass(drinkStatus)}">
+    ${getStatusLabel(drinkStatus)}
+  </div>
+`;
+
+contentArea.innerHTML = statusHtml;
 
   createProjectList(
     products.filter(
       p =>
       p.section === "飲食係" &&
       p.category === category
-    )
+     ),
+      true
   );
 
 }
