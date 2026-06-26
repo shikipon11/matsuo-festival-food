@@ -642,7 +642,7 @@ h1 {
 /* タイトル */
 .project-title {
 
-  font-size: 20px;
+  font-size: 15px;
 
   margin: 5px 0;
 
@@ -1127,10 +1127,10 @@ h1 {
   
 
 .product-price{
-    font-size:18px;
+    font-size:13px;
   }
 .product-description {
-  font-size: 18px;
+  font-size: 13px;
 }
 }
 /* ========================= */
