@@ -16,7 +16,7 @@ const products = [{
     section: "模擬店",
     price: "200円",
     description: "",
-    image: ["images/5E6C9A38-FC99-4B18-9C24-A5066DFCC89F.jpeg"]
+    image: ["images/IMG_0612.JPG"]
   },
   {
     number: 3,
