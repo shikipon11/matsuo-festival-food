@@ -14,7 +14,7 @@ const products = [{
     number: 2,
     name: "チョコバナナ",
     section: "模擬店",
-    price: "300円",
+    price: "200円",
     description: "",
     image: ["images/5E6C9A38-FC99-4B18-9C24-A5066DFCC89F.jpeg"]
   },
@@ -30,7 +30,7 @@ const products = [{
     number: 4,
     name: "ポップコーン",
     section: "模擬店",
-    price: "200円",
+    price: "300円",
     description: "塩<br>キャラメル<br>チョコレート",
     image: ["images/C2CF8B4C-00ED-4072-8A7E-60A8271EE4ED.jpeg"]
   },
