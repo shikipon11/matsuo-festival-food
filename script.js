@@ -383,7 +383,7 @@ const products = [{
     section: "飲食係",
     category: "ダーチャ",
     price: "150円",
-    description: "",
+    description: "(１日目は販売なし)",
     image: ["images/no-images.png"]
  }, 
 　{
