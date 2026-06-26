@@ -1124,13 +1124,15 @@ h1 {
 
     min-height:48px;
   }
-  
+  .product-name {
+  font-size: 22px;
+}
 
 .product-price{
-    font-size:13px;
+    font-size:18px;
   }
 .product-description {
-  font-size: 13px;
+  font-size: 18px;
 }
 }
 /* ========================= */
