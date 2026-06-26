@@ -235,14 +235,6 @@ const products = [{
     image: ["images/no-images.png"]
   },
   {
-    name: "えごま豚水餃子",
-    section: "地域応援",
-    category: "軽食",
-    price: "",
-    description: "",
-    image: ["images/IMG_0598.PNG"]
-  },
-  {
     name: "福島果物たくさんの<br>フルーツサンド",
     section: "地域応援",
     category: "加工品",
@@ -265,14 +257,6 @@ const products = [{
     price: "",
     description: "",
     image: ["images/IMG_0600.PNG"]
-  },
-  {
-    name: "焼きそば",
-    section: "地域応援",
-    category: "軽食",
-    price: "",
-    description: "",
-    image: ["images/no-images.png"]
   },
   {
     name: "手作りキャベツメンチ",
@@ -299,7 +283,7 @@ const products = [{
     image: ["images/no-images.png"]
   },
   {
-    name: "チュロス",
+    name: "ふくしまフルーツティー",
     section: "地域応援",
     category: "軽食",
     price: "",
@@ -307,7 +291,7 @@ const products = [{
     image: ["images/no-images.png"]
   },
   {
-    name: "バタフライピー<br>レモネードスカッシュ",
+    name: "ふくしまフルーツスカッシュ",
     section: "地域応援",
     category: "軽食",
     price: "",
@@ -315,20 +299,20 @@ const products = [{
     image: ["images/no-images.png"]
   },
   {
-    name: "ハイビスカス<br>レモネードスカッシュ",
+    name: "お好み焼き串",
     section: "地域応援",
     category: "軽食",
     price: "",
     description: "",
-    image: ["images/no-images.png"]
+    image: ["images/IMG_0599.PNG"]
   },
   {
-    name: "調理パン",
+    name: "えごま豚水餃子",
     section: "地域応援",
     category: "軽食",
     price: "",
     description: "",
-    image: ["images/no-images.png"]
+    image: ["images/IMG_0598.PNG"]
   },
   {
     name: "あんこ",
