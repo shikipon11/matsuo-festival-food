@@ -92,7 +92,7 @@ const products = [{
   },
   {
     number: 12,
-    name: "かき氷",
+    name: "かき氷@職員玄関横(定時制)",
     section: "模擬店",
     price: "300円",
     description: "7/4 12:00~<br>7/5 11:00~",
@@ -100,7 +100,7 @@ const products = [{
   },
   {
     number: 13,
-    name: "焼きそば",
+    name: "焼きそば@職員玄関横(定時制)",
     section: "模擬店",
     price: "400円",
     description: "7/4 12:00~<br>7/5 11:00~",
