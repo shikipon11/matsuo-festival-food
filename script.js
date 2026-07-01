@@ -75,6 +75,34 @@ const products = [{
     image: ["images/IMG_0525.JPG"]
   },
   {
+    number: 10,
+    name: "肉うどん@食堂(定時制)",
+    section: "模擬店",
+    price: "600円",
+    description: "7/4 12:00~<br>7/5 11:00~",
+  },
+  {
+    number: 11,
+    name: "かけうどん@食堂(定時制)",
+    section: "模擬店",
+    price: "450円",
+    description: "7/4 12:00~<br>7/5 11:00~",
+  },
+  {
+    number: 12,
+    name: "かき氷",
+    section: "模擬店",
+    price: "300円",
+    description: "7/4 12:00~<br>7/5 11:00~",
+  },
+  {
+    number: 13,
+    name: "焼きそば",
+    section: "模擬店",
+    price: "400円",
+    description: "7/4 12:00~<br>7/5 11:00~",
+  },
+  {
     name: "きゅうり",
     section: "地域応援",
     category: "農産物",
