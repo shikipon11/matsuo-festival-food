@@ -34,6 +34,22 @@ const products = [
   {
     number: 9,
     title: "たこ焼き"
+  }, 
+  {
+    number: 10,
+    title: "肉うどん"
+  },
+  {
+    number: 11,
+    title: "かけうどん"
+  },  
+  {
+    number: 12,
+    title: "かき氷"
+  },
+  {
+    number: 13,
+    title: "焼きそば"
   }
 ];
 const API_URL =
