@@ -80,6 +80,7 @@ const products = [{
     section: "模擬店",
     price: "600円",
     description: "7/4 12:00~<br>7/5 11:00~",
+    image: ["images/no-images.png"]
   },
   {
     number: 11,
@@ -87,6 +88,7 @@ const products = [{
     section: "模擬店",
     price: "450円",
     description: "7/4 12:00~<br>7/5 11:00~",
+    image: ["images/no-images.png"]
   },
   {
     number: 12,
@@ -94,6 +96,7 @@ const products = [{
     section: "模擬店",
     price: "300円",
     description: "7/4 12:00~<br>7/5 11:00~",
+    image: ["images/no-images.png"]
   },
   {
     number: 13,
@@ -101,6 +104,7 @@ const products = [{
     section: "模擬店",
     price: "400円",
     description: "7/4 12:00~<br>7/5 11:00~",
+    image: ["images/no-images.png"]
   },
   {
     name: "きゅうり",
