@@ -1,0 +1,799 @@
+/* ========================= */
+/* style.css */
+/* ========================= */
+/* 全体設定 */
+body {
+
+  margin: 0;
+
+  background-color: #e9f3f5;
+
+  color: #333333;
+
+  font-family:
+    "Zen Kaku Gothic New",
+    sans-serif;
+}
+
+/* ========================= */
+/* ヘッダー */
+/* ========================= */
+
+.site-header {
+
+  height: 55px;
+
+  background-color: white;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 0 30px;
+
+  box-sizing: border-box;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 100;
+
+  box-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 左側 */
+.header-left {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+/* ロゴ */
+.header-logo {
+
+  width: 50px;
+
+  height: 50px;
+
+  object-fit: contain;
+}
+
+.header-title {
+
+  font-size: 20px;
+}
+
+/* メニュー */
+.header-nav {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+/* メニューリンク */
+.header-nav a {
+
+  text-decoration: none;
+
+  color: #333333;
+
+  font-weight: bold;
+
+  transition: 0.2s;
+}
+
+/* ホバー */
+.header-nav a:hover {
+
+  color: #d75c37;
+}
+
+/* ========================= */
+/* ハンバーガー */
+/* ========================= */
+
+/* ボタン */
+#menu-button {
+
+  display: none;
+
+  background: none;
+
+  border: none;
+
+  font-size: 32px;
+
+  color: #333333;
+
+  cursor: pointer;
+
+  appearance: none;
+
+  -webkit-appearance: none;
+}
+
+/* ========================= */
+/* スケジュール */
+/* ========================= */
+
+.dropdown {
+
+  position: relative;
+}
+
+/* ボタン */
+.dropdown-button {
+
+  background: none;
+
+  border: none;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  color: #333333;
+
+  cursor: pointer;
+
+  font-family:
+    "Zen Kaku Gothic New",
+    sans-serif;
+}
+
+/* ドロップダウン */
+#schedule-dropdown {
+
+  display: none;
+
+  position: absolute;
+
+  top: 40px;
+
+  left: 0;
+
+  background-color: white;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  min-width: 220px;
+
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.15);
+
+  z-index: 999;
+}
+
+/* 開いた状態 */
+#schedule-dropdown.open {
+
+  display: block;
+}
+
+/* 中のリンク */
+#schedule-dropdown a {
+
+  display: block;
+
+  padding: 12px 16px;
+
+  text-decoration: none;
+
+  color: #333333;
+}
+
+/* ホバー */
+#schedule-dropdown a:hover {
+
+  background-color: #f3f3f3;
+
+  color: #d75c37;
+}
+
+/* ========================= */
+/* ヒーロー */
+/* ========================= */
+
+.hero {
+
+  width: 100%;
+
+  height: 350px;
+
+  background-image: url("images/IMG_0495.JPG");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+/* オーバーレイ */
+.hero-overlay {
+
+  width: 100%;
+
+  height: 100%;
+
+  background-color:
+    rgba(0, 0, 0, 0.35);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.hero-title {
+
+  color: white;
+
+  font-size: 72px;
+
+  margin: 0;
+
+  text-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.5);
+
+  font-family:
+    "Zen Old Mincho",
+    serif;
+}
+#caution-statement {
+  text-align: center;
+  margin-top: 20px ;
+  font-size: 0.9rem;
+  color: #666;
+}
+/* ========================= */
+/* コンテナ */
+/* ========================= */
+.container {
+
+  max-width: 900px;
+
+  margin: auto;
+
+  padding: 10px;
+
+  padding-bottom: 80px;
+
+  color: #134f5c;
+
+}
+
+h1 {
+
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+#last-update {
+  text-align: right;
+  margin: 12px 16px;
+  font-size: 0.9rem;
+  color: #666;
+}
+/* ========================= */
+/* 上部ボタン */
+/* ========================= */
+
+.top-buttons {
+
+  display: flex;
+
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+/* ボタン */
+.tab-button {
+
+  flex: 1;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background-color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+  color: #333333;
+
+  font-weight: bold;
+
+  font-family:
+    "Zen Kaku Gothic New",
+    sans-serif;
+
+  appearance: none;
+
+  -webkit-appearance: none;
+}
+
+/* ホバー */
+.tab-button:hover {
+
+  background-color: #f0d2c8;
+}
+
+/* 選択中 */
+.tab-button.active {
+
+  background-color: #cc4125;
+
+  color: white;
+}
+
+.product-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap:4px;
+}
+
+.product-name {
+  color:#cc4125;
+  font-size: 25px;
+  font-weight: bold;
+   margin: 2px;
+}
+
+.product-price {
+  font-weight: bold;
+  font-size: 24px;
+  margin:2px
+}
+.product-description {
+  font-size: 24px;
+  color: #BF9000;
+  margin:2px;
+}
+.product-name,
+.product-price,
+.product-description {
+  padding: 0;
+  line-height: 1;
+}
+.product-image img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.subtabs {
+  display:flex;
+  gap:8px;
+  margin:15px 0;
+  flex-wrap:wrap;
+  justify-content:center;
+  color:black;
+}
+
+.hidden {
+  display:none;
+}
+.subtab-button {
+  padding:16px 32px;
+  font-size:1.1rem;
+  font-weight:600;
+
+  min-width:140px;
+  min-height:56px;
+
+  border:none;
+  border-radius:16px;
+
+  background:#fff;
+  box-shadow:0 4px 10px rgba(0,0,0,.12);
+
+  cursor:pointer;
+  color:black;
+  transition:
+    transform .15s,
+    box-shadow .15s;
+}
+
+/* ホバー */
+.subtab-button:hover {
+  transform:translateY(-2px);
+}
+
+/* 押してる瞬間 */
+.subtab-button:active {
+  transform:translateY(2px);
+  box-shadow:0 1px 3px rgba(0,0,0,.15);
+}
+.subtab-button.active {
+  transform:translateY(2px);
+  box-shadow:0 1px 3px rgba(0,0,0,.15);
+
+  background:#cc4125;
+  color:white;
+}
+.food-status-box {
+  margin: 16px;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  gap:4px;
+}
+/* ========================= */
+/* ========================= */
+.project-congestion {
+  padding:4px 8px;
+  border-radius:999px;
+  font-size:0.85rem;
+  font-weight:bold;
+}
+
+.status-empty {
+  color:#166534;
+  background:#dcfce7;
+}
+
+.status-normal {
+  color:#854d0e;
+  background:#fef9c3;
+}
+
+.status-busy {
+  color:#991b1b;
+  background:#fee2e2;
+}
+
+.status-limit {
+  color:#111827;
+  background:#e5e7eb;
+}
+
+/* ホバー */
+.product-top-row {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:8px;
+}
+
+/* ========================= */
+/* フッター */
+/* ========================= */
+.site-footer {
+
+  background-color: #efefef;
+
+  padding: 30px 40px;
+
+  margin-top: 70px;
+
+
+  font-family:
+    "Zen Old Mincho",
+    serif;
+}
+
+.footer-title {
+
+  margin: 0 0 10px;
+
+  font-size: 30px;
+
+  font-weight: bold;
+
+  color: #111111;
+}
+
+/* 実行委員会など */
+.footer-text {
+
+  margin: 6px 0;
+
+  font-size: 15px;
+
+  font-weight: bold;
+
+  color: #0b3b4a;
+}
+
+/* 注意文 */
+.footer-note {
+
+  margin: 10px 0 0;
+
+  font-size: 14px;
+
+  color: #222222;
+
+  line-height: 1.8;
+}
+
+
+/* ========================= */
+/* スマホ対応 */
+/* ========================= */
+
+@media screen and (max-width: 768px) {
+
+  /* ヘッダー */
+  .site-header {
+
+    padding: 15px 20px;
+  }
+
+  /* ハンバーガー */
+  #menu-button {
+
+    display: block;
+
+    position: relative;
+
+    z-index: 1000;
+
+    margin-right: 5px;
+  }
+
+  /* ナビ */
+  .header-nav {
+
+    position: fixed;
+
+    align-items: flex-start;
+    
+    top: 0;
+
+    left: -260px;
+
+    width: 240px;
+
+    height: 100vh;
+
+    background-color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    padding: 100px 20px 20px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+      2px 0 10px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s;
+
+    z-index: 999;
+  }
+
+  .header-nav a,.dropdown-button {
+    width: 100%;
+    text-align: left;
+  }
+
+  
+  .dropdown-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+  }
+  
+    .header-nav.open {
+
+    left: 0;
+  }
+
+    .header-title {
+
+    display: none;
+  }
+
+  /* ヒーロー */
+  .hero {
+
+    height: 220px;
+  }
+
+    .hero-title {
+
+    font-size: 42px;
+  }
+
+  .site-footer {
+
+    padding: 25px 20px;
+  }
+
+  .footer-title {
+
+    font-size: 18px;
+  }
+
+  .footer-text,
+  .footer-note {
+
+    font-size: 13px;
+
+  }
+  
+  .product-info {
+    gap: 1px;
+  }
+.product-image img{
+    width:120px;
+    height:120px;
+  }
+    .subtabs {
+    display:flex;
+    flex-wrap:nowrap;
+    gap:6px;
+  }
+   .hidden {
+  display:none;
+  }
+  
+  .subtab-button {
+    flex:1;
+    min-width:0;
+
+    padding:12px 4px;
+    font-size:0.9rem;
+
+    min-height:48px;
+  }
+  .product-name {
+  font-size: 22px;
+}
+
+.product-price {
+    font-size:18px;
+  }
+.product-description {
+  font-size: 18px;
+}
+}
+/* ========================= */
+/* 隠し演出 */
+/* ========================= */
+
+.hero-title.secret-active {
+
+  animation:
+    glow 1s ease,
+    shake 0.5s ease;
+}
+
+/* 光る */
+@keyframes glow {
+
+  0% {
+
+    text-shadow:
+      0 0 0px white;
+  }
+
+  50% {
+
+    text-shadow:
+      0 0 25px white,
+      0 0 50px #ffd700;
+  }
+
+  100% {
+
+    text-shadow:
+      0 0 0px white;
+  }
+}
+
+/* 少し揺れる */
+@keyframes shake {
+
+  0% {
+
+    transform: translateX(0);
+  }
+
+  25% {
+
+    transform: translateX(-5px);
+  }
+
+  50% {
+
+    transform: translateX(5px);
+  }
+
+  75% {
+
+    transform: translateX(-5px);
+  }
+
+  100% {
+
+    transform: translateX(0);
+  }
+}
+
+/* 紙吹雪 */
+.confetti {
+
+  position: fixed;
+
+  width: 10px;
+
+  height: 10px;
+
+  top: -10px;
+
+  border-radius: 2px;
+
+  pointer-events: none;
+
+  animation:
+    fall 3s linear forwards;
+
+  z-index: 9999;
+}
+
+@keyframes fall {
+
+  0% {
+
+    transform:
+      translate(0, 0)
+      rotate(0deg);
+
+    opacity: 1;
+  }
+
+  100% {
+
+    transform:
+      translate(
+        calc(
+          (var(--drift) - 0.5) * 400px
+        ),
+        110vh
+      )
+      rotate(720deg);
+
+    opacity: 0;
+  }
+}
